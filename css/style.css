@@ -1,0 +1,17 @@
+header {
+    left: 0;
+    position: fixed;
+    text-align: center;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+h1 {
+    font-family: 'Architects Daughter', Helvetica, Arial, sans-serif;
+    font-size: 4em;
+}
