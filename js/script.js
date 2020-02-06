@@ -8,10 +8,8 @@ var site = document.getElementById('site');
 var site_h = site.offsetHeight;
 var site_w = site.offsetWidth;
 
-// console.log('screen height = ' + h, 'screen width = ' + w);
-// console.log('site height = ' + site_h, 'site width = ' + site_w);
-
-console.log($);
+console.log('screen height = ' + h, 'screen width = ' + w);
+console.log('site height = ' + site_h, 'site width = ' + site_w);
 
 var header = document.getElementById('header');
 var header_h = header.offsetHeight;
@@ -20,47 +18,7 @@ var main = document.getElementById('main');
 
 console.log(header, header_h);
 
-
-// $('.flat-one').on('hover', function() {
-//     $('.flat-one').addClass('visible');
-// });
-
-
-var flatOne = document.getElementsByClassName('background-flat-one');
-console.log(flatOne);
-
-var flatTwo = document.getElementsByClassName('background-flat-two');
-console.log(flatTwo);
-
-//onMouseEnter
-
-function onMouseEnter(flat) {
-    if (flat === 1) {
-        for (let i = 0; i < flatOne.length; i++) {
-            flatOne[i].classList.add('visible');
-        }
-    }
-    if (flat === 2) {
-        for (let i = 0; i < flatTwo.length; i++) {
-            flatTwo[i].classList.add('visible');
-        }
-    }
-}
-
-// onmouseleave
-
-function onMouseLeave(flat) {
-    if (flat === 1) {
-        for (let i = 0; i < flatOne.length; i++) {
-            flatOne[i].classList.remove('visible');
-        }
-    }
-    if (flat === 2) {
-        for (let i = 0; i < flatTwo.length; i++) {
-            flatTwo[i].classList.remove('visible');
-        }
-    }
-}
+// menu/close button scripts:
 
 var button = document.querySelector('.animated-button')
 
@@ -69,7 +27,6 @@ $('.menu-button').on('click', function() {
     $('.animated-button').toggleClass("animated-button--show");
     $('#site-navigation').toggleClass("site-navigation--opened site-navigation--closed");
     $('header').toggleClass("ui-plum-background");
-    header.classList.remove("opaque-on-scroll")
 });
 
 $('.contact-link').on('click', function() {
@@ -96,12 +53,14 @@ $('.contact-us-link').on('click', function() {
 //     main.style.paddingTop = header_h + 'px';
 // })
 
-if (window.pageYOffset > 0) {
+if (window.pageYOffset > 3) {
     header.classList.add("opaque-on-scroll")
 }
 
+console.log(window.pageYOffset);
+
 window.addEventListener("scroll", function() {
-    if (window.pageYOffset > 0) {
+    if (window.pageYOffset > 3) {
         header.classList.add("opaque-on-scroll")
     } else {
         header.classList.remove("opaque-on-scroll")

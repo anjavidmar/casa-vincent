@@ -1,4 +1,7 @@
 var apiKey = "AIzaSyAR_M6OinKmdAXP626xgZGXqfUsgjBxSKQ";
+
+console.log("hello location!");
+
 var lang;
 var mapContainer = document.querySelector('.map-container')
 var map_h = h;

@@ -28,6 +28,7 @@
         <link href="https://fonts.googleapis.com/css?family=Fahkwang:400,400i,500,500i,600,600i|Frank+Ruhl+Libre|Open+Sans:400,700|Sarabun:200,200i,400,400i|Shadows+Into+Light+Two&display=swap&subset=latin-ext" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="./css/reset.css" />
         <link rel="stylesheet" type="text/css" href="./css/style.css" />
+        <link rel="stylesheet" type="text/css" href="./css/apartments.css" />
         <link rel="stylesheet" type="text/css" href="./css/extra-style.css" />
     </head>
     <body>
@@ -126,17 +127,6 @@
                 </footer>
             </aside>
             <main id="main" class="apartments">
-                <div class="body">
-                    <div class="menu-button">
-                        <div class="menu-button__inner">
-                            <div class="animated-button animated-button--show">
-                                <div class="bar"></div>
-                                <div class="bar"></div>
-                                <div class="bar"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="floorplan-container">
                     <div class="background-flat-one part-one"></div>
                     <div class="background-flat-one part-two"></div>
@@ -147,6 +137,43 @@
                     <div class="background-flat-two part-seven"></div>
                     <div class="background-flat-two part-eight"></div>
                     <img class="full-floorplan" src="./assets/floorplans/full-floorplan-large.png" />
+                    <!-- 
+                        <div class="address-container__inner">
+                            <div class="decorative-line"></div>
+                            <div class="address"
+                     -->
+                    <div class="text-box text-box--available text-box--1">
+                        <div class="flat-number">
+                            <div class="flat-number__inner">
+                                <h4 class="number">3</h4>
+                            </div>
+                        </div>
+                        <div class="flat-info">
+                            <div class="left">
+                            </div><div class="right">
+                                <p>
+                                    XX,X M<sup>2</sup><br />
+                                    <em>Available for sale</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-box text-box--sold text-box--2">
+                        <div class="flat-number">
+                            <div class="flat-number__inner">
+                                <h4 class="number">4</h4>
+                            </div>
+                        </div>
+                        <div class="flat-info">
+                            <div class="left">
+                            </div><div class="right">
+                                <p>
+                                    XX,X M<sup>2</sup><br />
+                                    <em>Sold</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="flat-one part-1" onmouseenter="onMouseEnter(1)" onmouseleave="onMouseLeave(1)"></div>
                     <div class="flat-one part-2" onmouseenter="onMouseEnter(1)" onmouseleave="onMouseLeave(1)"></div>
                     <div class="flat-one part-3" onmouseenter="onMouseEnter(1)" onmouseleave="onMouseLeave(1)"></div>
@@ -155,7 +182,7 @@
                     <div class="flat-two part-6" onmouseenter="onMouseEnter(2)" onmouseleave="onMouseLeave(2)"></div>
                     <div class="flat-two part-7" onmouseenter="onMouseEnter(2)" onmouseleave="onMouseLeave(2)"></div>
                     <div class="flat-two part-8" onmouseenter="onMouseEnter(2)" onmouseleave="onMouseLeave(2)"></div>
-                    <p class="floor-tag">GROUND FLOOR</p>
+                    <!-- <p class="floor-tag">FIRST FLOOR</p> -->
                 </div>
             </main>
             <!-- <aside id="callback-form" class="callback-form--opened"> -->
@@ -300,7 +327,8 @@
         <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" 
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="./js/script.js"></script>
+        <script type="text/javascript" src="./js/script.js" defer></script>
+        <script type="text/javascript" src="./js/apartments.js" defer></script>
   </body>
 
 </html>

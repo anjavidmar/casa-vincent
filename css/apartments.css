@@ -1,0 +1,287 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: #f1eddc;
+  background-image: url("../assets/icons/ricepaper_v3.png");
+  color: #000000;
+  font-family: "Frank Ruhl Libre", Garamond, Times, serif;
+}
+
+h1, h2, h3, h4, h5, h6, .display {
+  font-family: "Fahkwang", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+.top-heading {
+  font-family: "Sarabun", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 1.125em;
+  margin-bottom: 0.25rem;
+}
+
+h3 {
+  font-size: 1.75em;
+  line-height: 1.25;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
+u {
+  text-decoration: underline;
+}
+
+.smaller {
+  font-size: 0.875em;
+}
+
+a, a:link, a:visited, a:focus, a:hover, a:active {
+  color: inherit;
+  text-decoration: none;
+}
+a.link, a:link.link, a:visited.link, a:focus.link, a:hover.link, a:active.link {
+  cursor: pointer;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.site {
+  position: relative;
+}
+
+.site, .header__inner, .footer__inner, .form-container__inner {
+  min-width: 260px;
+  max-width: 1400px;
+  padding: 0 10px;
+}
+
+aside > * {
+  min-width: 260px;
+}
+
+main, .form-container {
+  padding-top: 145px;
+}
+
+main {
+  min-height: 100vh;
+  text-align: center;
+}
+main img {
+  max-width: 999px;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.floorplan-container {
+  margin: 0 auto;
+  max-width: 750px;
+  position: relative;
+}
+
+.full-floorplan {
+  display: block;
+  position: relative;
+}
+
+.background-flat-one {
+  background-color: rgba(147, 131, 127, 0.65);
+}
+
+.background-flat-two {
+  background-color: rgba(189, 196, 167, 0.85);
+}
+
+.background-flat-one, .background-flat-two {
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  top: 9.5%;
+  transition: opacity 2s;
+  width: 10%;
+}
+.background-flat-one.visible, .background-flat-two.visible {
+  opacity: 1;
+}
+
+.flat-one, .flat-two {
+  height: 100%;
+  position: absolute;
+  top: 9.5%;
+  transition: opacity 2s;
+  width: 10%;
+}
+
+.part-one, .part-1 {
+  height: 32.75%;
+  top: 26%;
+  left: 0.5%;
+  width: 7.5%;
+}
+
+.part-two, .part-2 {
+  height: 80.5%;
+  left: 8%;
+  top: 17%;
+  width: 22%;
+}
+
+.part-three, .part-3 {
+  height: 31%;
+  top: 17%;
+  left: 30%;
+  width: 15%;
+}
+
+.part-four, .part-4 {
+  height: 38.5%;
+  left: 45%;
+  width: 7.5%;
+}
+
+.part-five, .part-5 {
+  height: 51.25%;
+  top: 48%;
+  left: 30%;
+  width: 37%;
+}
+
+.part-six, .part-6 {
+  height: 38.5%;
+  right: 33%;
+  width: 14.5%;
+}
+
+.part-seven, .part-7 {
+  height: 74.75%;
+  right: 7.5%;
+  width: 25.5%;
+}
+
+.part-eight, .part-8 {
+  height: 34%;
+  right: 0.5%;
+  width: 7%;
+}
+
+.floor-tag {
+  font-size: 2em;
+  margin-bottom: 0;
+  position: absolute;
+  right: 0;
+  top: 100%;
+}
+
+.text-box {
+  background-color: #f6f9f0;
+  border: 1px solid #93837f;
+  position: absolute;
+  text-align: left;
+}
+.text-box--1 {
+  right: 53%;
+  top: 26%;
+}
+.text-box--2 {
+  right: 15%;
+  top: 15%;
+}
+
+.flat-number {
+  background-color: #ffffff;
+  border: 2px solid #93837f;
+  bottom: 0;
+  left: 0;
+  padding: 1px;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+.flat-number__inner {
+  background-color: #93837f;
+  height: 100%;
+  width: 4em;
+}
+.flat-number__inner .number {
+  color: #f6f9f0;
+  left: 0;
+  font-size: 2.75em;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+.flat-info {
+  border: 1px solid transparent;
+  margin: 2px;
+}
+.flat-info .left, .flat-info .right {
+  display: inline-block;
+  vertical-align: middle;
+}
+.flat-info .left {
+  height: 4em;
+  width: 4em;
+}
+.flat-info .right {
+  padding: 6px 8px 6px 12px;
+}
+.flat-info p {
+  margin-bottom: 0;
+}
+.flat-info p em {
+  color: #93837f;
+  display: inline-block;
+  margin-top: 0.5em;
+  padding-right: 4px;
+}
+
+.text-box--sold {
+  border-color: #bdc4a7;
+}
+.text-box--sold .flat-number {
+  border: 2px solid #bdc4a7;
+}
+.text-box--sold .flat-number__inner {
+  background-color: #bdc4a7;
+}
+.text-box--sold .flat-info p em {
+  color: #bdc4a7;
+}
+
+/*# sourceMappingURL=apartments.css.map */
