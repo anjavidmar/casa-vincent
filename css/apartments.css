@@ -1,23 +1,19 @@
-.floorplan-container {
+.apartments .floorplan-container {
   margin: 0 auto;
   max-width: 750px;
   position: relative;
 }
-
-.full-floorplan {
+.apartments .full-floorplan {
   display: block;
   position: relative;
 }
-
-.background-flat-one {
+.apartments .background-flat-one {
   background-color: rgba(147, 131, 127, 0.65);
 }
-
-.background-flat-two {
+.apartments .background-flat-two {
   background-color: rgba(189, 196, 167, 0.85);
 }
-
-.background-flat-one, .background-flat-two {
+.apartments .background-flat-one, .apartments .background-flat-two {
   height: 100%;
   position: absolute;
   opacity: 0;
@@ -25,95 +21,84 @@
   transition: opacity 2s;
   width: 10%;
 }
-.background-flat-one.visible, .background-flat-two.visible {
+.apartments .background-flat-one.visible, .apartments .background-flat-two.visible {
   opacity: 1;
 }
-
-.flat-one, .flat-two {
+.apartments .flat-one, .apartments .flat-two {
   height: 100%;
   position: absolute;
   top: 9.5%;
   transition: opacity 2s;
   width: 10%;
 }
-
-.part-one, .part-1 {
+.apartments .part-one, .apartments .part-1 {
   height: 32.75%;
   top: 26%;
   left: 0.5%;
   width: 7.5%;
 }
-
-.part-two, .part-2 {
+.apartments .part-two, .apartments .part-2 {
   height: 80.5%;
   left: 8%;
   top: 17%;
   width: 22%;
 }
-
-.part-three, .part-3 {
+.apartments .part-three, .apartments .part-3 {
   height: 31%;
   top: 17%;
   left: 30%;
   width: 15%;
 }
-
-.part-four, .part-4 {
+.apartments .part-four, .apartments .part-4 {
   height: 38.5%;
   left: 45%;
   width: 7.5%;
 }
-
-.part-five, .part-5 {
+.apartments .part-five, .apartments .part-5 {
   height: 51.25%;
   top: 48%;
   left: 30%;
   width: 37%;
 }
-
-.part-six, .part-6 {
+.apartments .part-six, .apartments .part-6 {
   height: 38.5%;
   right: 33%;
   width: 14.5%;
 }
-
-.part-seven, .part-7 {
+.apartments .part-seven, .apartments .part-7 {
   height: 74.75%;
   right: 7.5%;
   width: 25.5%;
 }
-
-.part-eight, .part-8 {
+.apartments .part-eight, .apartments .part-8 {
   height: 34%;
   right: 0.5%;
   width: 7%;
 }
-
-.floor-tag {
+.apartments .floor-tag {
   font-size: 2em;
   margin-bottom: 0;
   position: absolute;
   right: 0;
   top: 100%;
 }
-
-.text-box {
+.apartments .text-box {
   background-color: #f6f9f0;
   border: 1px solid #93837f;
   position: absolute;
   text-align: left;
   transition: all 1s 0.3s;
+  z-index: 4;
 }
-.text-box--1 {
+.apartments .text-box--1 {
   right: 53%;
   top: 26%;
 }
-.text-box--2 {
+.apartments .text-box--2 {
   right: 15%;
   top: 15%;
 }
-
-.flat-number {
+.apartments .flat-number {
   background-color: #93837f;
   border: 2px solid #93837f;
   bottom: 0;
@@ -122,21 +107,18 @@
   position: absolute;
   top: 0;
   transition: all 1s 0.3s;
-  z-index: 2;
 }
-
-.flat-number__border {
+.apartments .flat-number__border {
   border: 1px solid #f6f9f0;
   height: 100%;
   transition: all 1s 0.3s;
 }
-
-.flat-number__inner {
+.apartments .flat-number__inner {
   height: 100%;
   width: 4em;
   transition: all 1s 0.3s;
 }
-.flat-number__inner .number {
+.apartments .flat-number__inner .number {
   color: #f6f9f0;
   left: 0;
   font-size: 2.75em;
@@ -151,81 +133,370 @@
   -o-transform: translate(0, -50%);
   transform: translate(0, -50%);
 }
-
-.flat-info {
+.apartments .flat-info {
   border: 1px solid transparent;
   margin: 2px;
   transition: all 1s 0.3s;
 }
-.flat-info .left, .flat-info .right {
+.apartments .flat-info .left, .apartments .flat-info .right {
   display: inline-block;
   vertical-align: middle;
 }
-.flat-info .left {
+.apartments .flat-info .left {
   height: 4em;
   width: 4em;
 }
-.flat-info .right {
+.apartments .flat-info .right {
   padding: 6px 8px 6px 12px;
 }
-.flat-info p {
+.apartments .flat-info p {
   margin-bottom: 0;
 }
-.flat-info p em {
+.apartments .flat-info p em {
   color: #93837f;
   display: inline-block;
   margin-top: 0.5em;
   padding-right: 4px;
 }
-
-.text-box--available.select {
+.apartments .text-box--available.select {
   background-color: #ffffff;
   border: 1px solid #ffffff;
 }
-.text-box--available.select .flat-number {
+.apartments .text-box--available.select .flat-number {
   background-color: transparent;
   border: 2px solid transparent;
 }
-.text-box--available.select .flat-number__border {
+.apartments .text-box--available.select .flat-number__border {
   border: 1px solid #93837f;
 }
-.text-box--available.select .flat-number__inner .number {
+.apartments .text-box--available.select .flat-number__inner .number {
   color: #0c080a;
 }
-.text-box--available.select .flat-info {
+.apartments .text-box--available.select .flat-info {
   border: 1px solid #93837f;
 }
-
-.text-box--sold {
+.apartments .text-box--sold {
   background-color: #f6f9f0;
   border: 1px solid #bdc4a7;
 }
-.text-box--sold .flat-number {
+.apartments .text-box--sold .flat-number {
   background-color: #bdc4a7;
   border: 2px solid #bdc4a7;
 }
-.text-box--sold .flat-number__inner .number {
+.apartments .text-box--sold .flat-number__inner .number {
   color: #f6f9f0;
 }
-.text-box--sold .flat-info p em {
+.apartments .text-box--sold .flat-info p em {
   color: #bdc4a7;
 }
-.text-box--sold.select {
+.apartments .text-box--sold.select {
   background-color: #ffffff;
   border: 1px solid #ffffff;
 }
-.text-box--sold.select .flat-number {
+.apartments .text-box--sold.select .flat-number {
   background-color: transparent;
   border: 2px solid transparent;
 }
-.text-box--sold.select .flat-number__border {
+.apartments .text-box--sold.select .flat-number__border {
   border: 1px solid #bdc4a7;
 }
-.text-box--sold.select .flat-number__inner .number {
+.apartments .text-box--sold.select .flat-number__inner .number {
   color: #0c080a;
 }
-.text-box--sold.select .flat-info {
+.apartments .text-box--sold.select .flat-info {
   border: 1px solid #bdc4a7;
+}
+
+.apartment {
+  margin: 0 auto;
+  max-width: 885px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /*
+  <div class="photos">
+              <div class="photo-container">
+                  <div class="photo-container__inner">
+  */
+}
+.apartment .apartment__navigation {
+  margin: 0 auto;
+  max-width: 19em;
+}
+.apartment .flat-number-container {
+  display: inline-block;
+  max-width: 3.8125em;
+  padding: 8px 4px;
+  width: 25%;
+}
+.apartment .flat-number {
+  background-color: #93837f;
+  border: 1px solid #93837f;
+  display: inline-block;
+  padding: 2px;
+  transition: all 1s;
+}
+.apartment .flat-number.current {
+  background-color: #f6f9f0;
+  border-color: #f6f9f0;
+}
+.apartment .flat-number.current .flat-number__border {
+  border: 1px solid #93837f;
+}
+.apartment .flat-number.current .flat-number__inner .number {
+  color: #93837f;
+  cursor: default;
+}
+.apartment .flat-number.sold {
+  background-color: #bdc4a7;
+  border-color: #bdc4a7;
+}
+.apartment .flat-number.sold .flat-number__inner .number {
+  cursor: default;
+}
+.apartment .flat-number.link:hover {
+  background-color: #f6f9f0;
+}
+.apartment .flat-number.link:hover .flat-number__border {
+  border: 1px solid #93837f;
+}
+.apartment .flat-number.link:hover .flat-number__inner .number {
+  color: #93837f;
+}
+.apartment .flat-number__border {
+  display: inline-block;
+  border: 1px solid #f6f9f0;
+  transition: all 1s;
+}
+.apartment .flat-number__inner {
+  display: inline-block;
+  padding: 0.5em;
+  transition: all 1s;
+}
+.apartment .flat-number__inner .number {
+  display: inline-block;
+  color: #f6f9f0;
+  font-size: 1.3125em;
+  text-align: center;
+  transition: all 1s;
+  width: 1em;
+}
+.apartment .apartment__header {
+  padding: 50px 0 25px;
+}
+.apartment .left, .apartment .right {
+  display: inline-block;
+  vertical-align: middle;
+}
+.apartment .left {
+  text-align: left;
+  width: 25%;
+}
+.apartment .right {
+  text-align: right;
+  width: 75%;
+}
+.apartment h2 {
+  position: relative;
+}
+.apartment .hash {
+  bottom: 0;
+  color: #93837f;
+  position: absolute;
+  right: 100%;
+}
+.apartment .table {
+  border-bottom: 1px solid #93837f;
+  border-right: 1px solid #93837f;
+  border-top: 1px solid #93837f;
+  margin: 1.5em 0;
+}
+.apartment .cell {
+  border-left: 1px solid #93837f;
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+.apartment .border {
+  border: 1px solid #93837f;
+  margin: 2px;
+  padding: 8px;
+}
+.apartment .cell__inner {
+  position: relative;
+  text-align: left;
+}
+.apartment .cell__inner img {
+  display: block;
+}
+.apartment .cell__inner .number {
+  color: #0c080a;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.apartment .cell__inner .label {
+  bottom: 0;
+  color: #0c080a;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+.apartment .floorplan-container {
+  padding: 1.75em 0;
+}
+.apartment .photos {
+  padding: 2em 0;
+}
+.apartment .photo-container {
+  display: inline-block;
+  vertical-align: middle;
+}
+.apartment .photo-container.wide {
+  max-width: 236px;
+  width: 71.7%;
+}
+.apartment .photo-container.narrow {
+  width: 28.3%;
+  max-width: 95.5px;
+}
+.apartment .photo-container__inner {
+  padding: 2px;
+}
+.apartment .photo-container__inner img {
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+/*
+aside {
+    // bottom: 0;
+    color: $pure-white;
+    // left: 0;
+    overflow: auto;
+    // position: fixed;
+    // right: 0;
+    // top: 0;
+    transition-property: transform;
+    transition-duration: 2s;
+}
+*/
+#slideshow {
+  background-color: #0c080a80;
+  overflow: hidden;
+  -webkit-transform: translate(0, 100%);
+  -moz-transform: translate(0, 100%);
+  -ms-transform: translate(0, 100%);
+  -o-transform: translate(0, 100%);
+  transform: translate(0, 100%);
+  z-index: 7;
+}
+#slideshow header {
+  position: absolute;
+}
+#slideshow .slideshow-container {
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1156.25px;
+  width: 100%;
+}
+#slideshow .previous-container, #slideshow .slideshow-container__inner, #slideshow .next-container {
+  display: inline-block;
+  height: 100%;
+  position: relative;
+  vertical-align: top;
+}
+#slideshow .previous-container, #slideshow .next-container {
+  width: 15%;
+}
+#slideshow .previous-container .arrow, #slideshow .next-container .arrow {
+  border-top: 2px solid #ffffff;
+  cursor: pointer;
+  height: 38px;
+  position: absolute;
+  top: 50%;
+  width: 38px;
+}
+#slideshow .previous-container .arrow--previous, #slideshow .next-container .arrow--previous {
+  border-left: 2px solid #ffffff;
+  right: 0;
+  transform: translate(25%, -50%) rotate(-45deg);
+}
+#slideshow .previous-container .arrow--next, #slideshow .next-container .arrow--next {
+  border-right: 2px solid #ffffff;
+  left: 0;
+  transform: translate(-25%, -50%) rotate(45deg);
+}
+#slideshow .slideshow-container__inner {
+  width: 70%;
+}
+#slideshow .photos-container {
+  background-color: #f6f9f0;
+  left: 0;
+  padding: 2px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+#slideshow .photos-border {
+  border: 1px solid #bdc4a7;
+  padding: 3px;
+}
+#slideshow .photos-container__inner {
+  position: relative;
+}
+#slideshow .photos-container__inner img {
+  display: block;
+}
+#slideshow .photo-container {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+#slideshow .photo-container .photo {
+  height: 100%;
+  margin: 0 auto;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+#slideshow .photo-container .photo.visible {
+  opacity: 1;
+}
+#slideshow.slideshow--opened {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+/*
+class="slideshow-container__inner">
+    <div class="photos-container">
+        <div class="photos-border">
+            <div class="photos-container__inner">
+                <img src="../assets/images/spaceholder.png" />
+                <div class="photo-container wide">
+                    <img class="photo" src="../assets/images/flat3/DSC003756.jpg" alt="alternative text" />
+                </div>
+                <div class="photo-container narrow">
+                    <img class="photo" src="../assets/images/flat3/DSC003759.jpg" alt="alternative text" />
+                </div>
+*/
+@media screen and (min-width: 495px) {
+  .apartment .cell {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 33.5em) {
+  .apartment .apartment__navigation {
+    max-width: none;
+  }
 }
 
 /*# sourceMappingURL=apartments.css.map */

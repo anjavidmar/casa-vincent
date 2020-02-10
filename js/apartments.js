@@ -50,3 +50,48 @@ function onMouseLeave(flat) {
         textBox2.classList.remove("select");
     }
 }
+
+
+//flat info page:
+
+var photo = document.getElementsByClassName('photo');
+var visiblePhoto;
+
+function showPhoto(x) {
+    photo[x].classList.add("visible");
+    visiblePhoto = x;
+}
+
+function hidePhotos() {
+    for (let i = 0; i < photo.length; i++) {
+        photo[i].classList.remove("visible");
+    }
+}
+
+function nextPhoto() {
+    console.log("[next]");
+    photo[visiblePhoto].classList.remove("visible");
+    visiblePhoto++
+    if (visiblePhoto < photo.length) {
+        photo[visiblePhoto].classList.add("visible");
+    } else {
+        visiblePhoto = 0;
+        photo[visiblePhoto].classList.add("visible");
+    }
+    
+}
+
+function previousPhoto() {
+    console.log("[previous]");
+    photo[visiblePhoto].classList.remove("visible");
+    visiblePhoto--
+    console.log(visiblePhoto);
+    if (visiblePhoto >= 0) {
+        photo[visiblePhoto].classList.add("visible");
+    } else {
+        console.log("back to last");
+        visiblePhoto = photo.length - 1;
+        photo[visiblePhoto].classList.add("visible");
+        console.log(visiblePhoto);
+    }
+}

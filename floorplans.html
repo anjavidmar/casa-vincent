@@ -30,12 +30,11 @@
         <link href="https://fonts.googleapis.com/css?family=Fahkwang:400,400i,500,500i,600,600i|Frank+Ruhl+Libre|Open+Sans:400,700|Sarabun:200,200i,400,400i|Shadows+Into+Light+Two&display=swap&subset=latin-ext" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="./css/reset.css" />
         <link rel="stylesheet" type="text/css" href="./css/style.css" />
-        <link rel="stylesheet" type="text/css" href="./css/apartments.css" />
         <link rel="stylesheet" type="text/css" href="./css/extra-style.css" />
     </head>
     <body>
-        <div id="site" class="site">
-            <!-- <header id="header" class="ui-plum-background"> -->
+        <div id="site" class="site plum">
+            <!-- <header id="header" class="ui-plum-background opaque-on-scroll"> -->
             <header id="header">
                 <div class="header__inner">
                     <div class="header__left">
@@ -50,7 +49,7 @@
                             </div>
                         </div>
                         <div class="site-identity">
-                            <h1><a href="./">Haus auf Krk</a></h1>
+                            <h1><a>Haus auf Krk</a></h1>
                             <em class="smaller" itemscope itemprop="address" itemtype="http://schema.org/PostalAddress">
                                 <a href="./location.html">
                                     <span itemprop="streetAddress">Vladimira Nazora 2,</span>
@@ -79,8 +78,8 @@
                     <img class="background-logo" src="./assets/images/logo-large-white.png" alt="large haus auf krk logo" />
                     <nav>
                         <ul>
-                            <li class="display link"><span class="decorative-line decorative-line--start"></span><a href="./">Haus auf Krk</a><span class="decorative-line decorative-line--end"></span></li>
-
+                            <li class="display current"><span class="decorative-line decorative-line--start"></span><a>Haus auf Krk</a><span class="decorative-line decorative-line--end"></span></li>
+                            
                             <!-- <li><img src="./assets/icons/divider2.png" /></li> -->
 
                             <li class="divider">
@@ -88,9 +87,9 @@
                                 <div class="large-square"></div>
                                 <div class="little-square"></div>
                             </li>
-
-                            <li class="display current"><span class="decorative-line decorative-line--start"></span><a>Apartments</a><span class="decorative-line decorative-line--end"></span></li>
-
+                            
+                            <li class="display link"><span class="decorative-line decorative-line--start"></span><a href="./apartments.html">Apartments</a><span class="decorative-line decorative-line--end"></span></li>
+                            
                             <!-- <li><img src="./assets/icons/divider2.png" /></li> -->
 
                             <li class="divider">
@@ -98,9 +97,9 @@
                                 <div class="large-square"></div>
                                 <div class="little-square"></div>
                             </li>
-
+                            
                             <li class="display link"><span class="decorative-line decorative-line--start"></span><a href="./location.html">Location</a><span class="decorative-line decorative-line--end"></span></li>
-
+                            
                             <!-- <li><img src="./assets/icons/divider2.png" /></li> -->
 
                             <li class="divider">
@@ -108,7 +107,7 @@
                                 <div class="large-square"></div>
                                 <div class="little-square"></div>
                             </li>
-
+                            
                             <li class="display link"><span class="decorative-line decorative-line--start"></span><a class="link" onclick="toggleForm(contact, 2, 3)">Contact</a><span class="decorative-line decorative-line--end"></span></li>
                         </ul>
                     </nav>
@@ -132,64 +131,13 @@
                     </footer>
                 </div>
             </aside>
-            <main id="main" class="apartments">
-                <div class="floorplan-container">
-                    <div class="background-flat-one part-one"></div>
-                    <div class="background-flat-one part-two"></div>
-                    <div class="background-flat-one part-three"></div>
-                    <div class="background-flat-one part-four"></div>
-                    <div class="background-flat-one part-five"></div>
-                    <div class="background-flat-two part-six"></div>
-                    <div class="background-flat-two part-seven"></div>
-                    <div class="background-flat-two part-eight"></div>
-                    <img class="full-floorplan" src="./assets/floorplans/full-floorplan-large.png" />
-                    <div class="text-box text-box--available text-box--1">
-                        <div class="flat-number">
-                            <div class="flat-number__border">
-                                <div class="flat-number__inner">
-                                    <div class="space-holder"></div>
-                                    <h4 class="number">3</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flat-info">
-                            <div class="left">
-                            </div><div class="right">
-                                <p>
-                                    XX,X M<sup>2</sup><br />
-                                    <em>Available for sale</em>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-box text-box--sold text-box--2">
-                        <div class="flat-number">
-                            <div class="flat-number__border">
-                                <div class="flat-number__inner">
-                                    <h4 class="number">4</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flat-info">
-                            <div class="left">
-                            </div><div class="right">
-                                <p>
-                                    XX,X M<sup>2</sup><br />
-                                    <em>Sold</em>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flat-one part-1" onmouseenter="onMouseEnter(1)" onmouseleave="onMouseLeave(1)"></div>
-                    <div class="flat-one part-2" onmouseenter="onMouseEnter(1)" onmouseleave="onMouseLeave(1)"></div>
-                    <div class="flat-one part-3" onmouseenter="onMouseEnter(1)" onmouseleave="onMouseLeave(1)"></div>
-                    <div class="flat-one part-4" onmouseenter="onMouseEnter(1)" onmouseleave="onMouseLeave(1)"></div>
-                    <div class="flat-one part-5" onmouseenter="onMouseEnter(1)" onmouseleave="onMouseLeave(1)"></div>
-                    <div class="flat-two part-6" onmouseenter="onMouseEnter(2)" onmouseleave="onMouseLeave(2)"></div>
-                    <div class="flat-two part-7" onmouseenter="onMouseEnter(2)" onmouseleave="onMouseLeave(2)"></div>
-                    <div class="flat-two part-8" onmouseenter="onMouseEnter(2)" onmouseleave="onMouseLeave(2)"></div>
-                    <!-- <p class="floor-tag">FIRST FLOOR</p> -->
-                </div>
+            <main id="main">
+                <img src="./assets/floorplans/grey_ground-transparent.png" />
+                <img src="./assets/floorplans/grey_mid-transparent.png" />
+                <img src="./assets/floorplans/grey_pent-transparent.png" />
+                <img src="./assets/floorplans/true_ground-transparent.png" />
+                <img src="./assets/floorplans/true_mid-transparent.png" />
+                <img src="./assets/floorplans/true_pent-transparent.png" />
             </main>
             <!-- <aside id="callback-form" class="callback-form--opened"> -->
             <aside id="callback-form" class="callback-form--closed">
@@ -325,16 +273,15 @@
                 </div><div class="footer__right">
                     <div class="author">
                         <em class="smaller">Developed by&nbsp;</em>
-                        <h6 class="number"><a>Anja Vidmar</a></h6>
+                        <h6 class="number"><a href="#">Anja Vidmar</a></h6>
                     </div>
                 </div>
             </footer>
         </div>
         <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
-        <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" 
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
         <script type="text/javascript" src="./js/script.js" defer></script>
-        <script type="text/javascript" src="./js/apartments.js" defer></script>
   </body>
 
 </html>

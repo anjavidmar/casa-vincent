@@ -38,7 +38,7 @@
             <header id="header">
                 <div class="header__inner">
                     <div class="header__left">
-                        <div class="menu-button">
+                        <div class="menu-button" onclick="toggleMenu()">
                             <div class="menu-button__inner">
                                 <!-- <div class="animated-button animated-button--hide"> -->
                                 <div class="animated-button animated-button--show">
@@ -49,12 +49,14 @@
                             </div>
                         </div>
                         <div class="site-identity">
-                            <h1><a href="#">Haus auf Krk</a></h1>
+                            <h1><a>Haus auf Krk</a></h1>
                             <em class="smaller" itemscope itemprop="address" itemtype="http://schema.org/PostalAddress">
-                                <span itemprop="streetAddress">Vladimira Nazora 2,</span>
-                                <span itemprop="addressLocality"> Njivice</span>
-                                <span itemprop="addressLocality" class="hidden">Krk</span>
-                                <span itemprop="addressCountry" class="hidden">Croatia</span>
+                                <a href="./location.html">
+                                    <span itemprop="streetAddress">Vladimira Nazora 2,</span>
+                                    <span itemprop="addressLocality"> Njivice</span>
+                                    <span itemprop="addressLocality" class="hidden">Krk</span>
+                                    <span itemprop="addressCountry" class="hidden">Croatia</span>
+                                </a>
                             </em>
                         </div>
                     </div><div class="header__right">
@@ -65,7 +67,7 @@
                         </ul>
                         <span class="contact" itemprop="telephone">
                             <h6 class="number"><a href="tel:+386 41 686 434">+386 41 686 434</a></h6>
-                            <em><a class="contact-link"><u>Give me a call</u></a></em>
+                            <em><a class="link" onclick="toggleForm(callback, 0, 1)"><u>Request a call</u></a></em>
                         </span>
                     </div>
                 </div>
@@ -106,7 +108,7 @@
                                 <div class="little-square"></div>
                             </li>
                             
-                            <li class="display link"><span class="decorative-line decorative-line--start"></span><a href="#">Contact</a><span class="decorative-line decorative-line--end"></span></li>
+                            <li class="display link"><span class="decorative-line decorative-line--start"></span><a class="link" onclick="toggleForm(contact, 2, 3)">Contact</a><span class="decorative-line decorative-line--end"></span></li>
                         </ul>
                     </nav>
                     <footer>
@@ -130,14 +132,16 @@
                 </div>
             </aside>
             <main id="main">
-                <img class="main-placeholder" src="./assets/images/placeholder_16x9.png" />
+                <div class="fixed-height">
+                    <img class="main-placeholder" src="./assets/images/placeholder_16x9.png" alt="placeholder" />
+                </div>
             </main>
             <!-- <aside id="callback-form" class="callback-form--opened"> -->
             <aside id="callback-form" class="callback-form--closed">
                 <header>
                     <div class="header__inner">
                         <div class="header__left">
-                            <div class="close-button contact-link">
+                            <div class="close-button" onclick="toggleForm(callback, 1, 0)">
                                 <div class="close-button__inner">
                                     <div class="non-animated-button non-animated-button--hide">
                                         <div class="bar"></div>
@@ -182,7 +186,7 @@
                 <header class="ui-plum-background">
                     <div class="header__inner">
                         <div class="header__left">
-                            <div class="close-button contact-us-link">
+                            <div class="close-button" onclick="toggleForm(contact, 3, 2)">
                                 <div class="close-button__inner">
                                     <div class="non-animated-button non-animated-button--hide">
                                         <div class="bar"></div>
@@ -203,7 +207,7 @@
                         </div><div class="header__right">
                             <span class="contact" itemprop="telephone">
                                 <h6 class="number"><a href="tel:+386 41 686 434">+386 41 686 434</a></h6>
-                                <em><a class="contact-link"><u>Give me a call</u></a></em>
+                                <em><a class="link" onclick="toggleForm(callback, 0, 1)"><u>Request a call</u></a></em>
                             </span>
                         </div>
                     </div>
@@ -260,20 +264,20 @@
                         <em>2020 &copy; Haus auf Krk</em>
                         <p class="email"><strong class="smaller">
                             <!-- <a href="mailto:andreja.vidmar@a3doo.si">andreja.vidmar@a3doo.si</a> -->
-                            <a class="contact-us-link link">andreja.vidmar@a3doo.si</a>
+                            <a class="link" onclick="toggleForm(contact, 2, 3)">andreja.vidmar@a3doo.si</a>
                         </strong></p>
                     </div>
                 </div><div class="footer__right">
                     <div class="author">
                         <em class="smaller">Developed by&nbsp;</em>
-                        <h6 class="number"><a href="#">Anja Vidmar</a></h6>
+                        <h6 class="author"><a>Anja Vidmar</a></h6>
                     </div>
                 </div>
             </footer>
         </div>
         <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" 
-            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" 
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
         <script type="text/javascript" src="./js/script.js" defer></script>
   </body>
 

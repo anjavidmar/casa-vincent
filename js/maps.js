@@ -2,19 +2,10 @@ var apiKey = "AIzaSyAR_M6OinKmdAXP626xgZGXqfUsgjBxSKQ";
 
 console.log("hello location!");
 
-var lang;
-var mapContainer = document.querySelector('.map-container')
-var map_h = h;
-
-if (w > 405) {
-    map_h = h - 105;
-} else {
-    map_h = h - 155;
-}
+// var mapContainer = document.querySelector('.map-container');
+// var map_h = fixedHeight_h;
 
 document.addEventListener('DOMContentLoaded', function () {
-    mapContainer.style.height = map_h + 'px';
-
     if (document.querySelectorAll('#map').length > 0) {
         if (document.querySelector('html').lang) {
             lang = document.querySelector('html').lang;
@@ -45,16 +36,3 @@ function initMap() {
         animation: google.maps.Animation.DROP
     })
 }
-
-window.addEventListener('resize', function() {
-    h = window.innerHeight;
-    w = window.innerWidth;
-
-    if (w > 415) {
-        map_h = h - 105;
-    } else {
-        map_h = h - 155;
-    }
-
-    mapContainer.style.height = map_h + 'px';
-})

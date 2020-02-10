@@ -29,12 +29,16 @@ h1 {
   margin-bottom: 0.25rem;
 }
 
+h2 {
+  font-size: 1.75em;
+}
+
 h3 {
   font-size: 1.75em;
   line-height: 1.25;
 }
 
-p {
+p.margined {
   margin-bottom: 1em;
 }
 
@@ -54,11 +58,16 @@ u {
   font-size: 0.875em;
 }
 
+.larger {
+  font-size: 1.5em;
+}
+
 a, a:link, a:visited, a:focus, a:hover, a:active {
   color: inherit;
   text-decoration: none;
 }
-a.link, a:link.link, a:visited.link, a:focus.link, a:hover.link, a:active.link {
+
+a.link {
   cursor: pointer;
 }
 
@@ -68,6 +77,10 @@ a.link, a:link.link, a:visited.link, a:focus.link, a:hover.link, a:active.link {
 
 .align-center {
   text-align: center;
+}
+
+.align-left {
+  text-align: left;
 }
 
 .site {
@@ -84,17 +97,13 @@ aside > * {
   min-width: 260px;
 }
 
-main, .form-container {
+main, .form-container, .slideshow-container {
   padding-top: 145px;
 }
 
 main {
   padding-bottom: 5px;
   text-align: center;
-}
-main img {
-  max-width: 999px;
-  width: 100%;
 }
 
 .hidden {
@@ -263,7 +272,6 @@ header .contact .number {
 }
 header .contact em {
   color: #93837f;
-  cursor: pointer;
 }
 header.opaque-on-scroll {
   background-color: #f6f9f0a6;
@@ -506,17 +514,6 @@ aside#contact-form {
 }
 aside#contact-form header {
   position: absolute;
-  padding: 25px 0;
-}
-aside#contact-form header .header__inner {
-  padding-top: 0;
-}
-aside#contact-form header .header__left {
-  padding-bottom: 10px;
-  padding-top: 0;
-}
-aside#contact-form header .header__right {
-  padding-top: 0;
 }
 aside#contact-form .form-container {
   text-align: center;
@@ -603,7 +600,7 @@ aside form.contact-form textarea {
   height: 9em;
 }
 
-.location .map-container {
+.location #map-container {
   border: 1px solid #bdc4a7;
   box-shadow: 0px 0px 5px rgba(147, 131, 127, 0.65);
   margin-bottom: 10px;
@@ -686,13 +683,10 @@ footer p.email {
   }
 }
 @media screen and (min-width: 26em) {
-  main, .form-container {
+  main, .form-container, .slideshow-container {
     padding-top: 105px;
   }
 
-  aside#contact-form header .header__left {
-    padding-bottom: 0;
-  }
   aside#site-navigation .background-logo, aside#site-navigation nav {
     padding: 95px 10px 55px;
   }
@@ -710,7 +704,7 @@ footer p.email {
   }
 }
 @media screen and (min-width: 640px) {
-  main, .form-container {
+  main, .form-container, .slideshow-container {
     padding-top: 95px;
   }
 
