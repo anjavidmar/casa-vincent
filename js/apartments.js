@@ -1,55 +1,202 @@
 console.log("hello apartments!");
 
+var visible = 0;
+var floorplan = document.getElementsByClassName('floorplan');
+var floorLink = document.getElementsByClassName('desktop-floor-navigation');
+var activeFloor = (floorLink.length - 1) - visible;
 
+var upButton = document.getElementsByClassName('button--up')[0];
+var downButton = document.getElementsByClassName('button--down')[0];
 
-// $('.flat-one').on('hover', function() {
-//     $('.flat-one').addClass('visible');
-// });
+floorplan[visible].classList.add('visible');
+floorLink[activeFloor].classList.add('current');
+if (visible === 0) {
+    downButton.classList.remove('active');
+}
+if (visible === floorplan.length - 1) {
+    upButton.classList.remove('active');
+}
 
+function goUp() {
+    var max = floorplan.length - 1;
+    if (visible < max) {
+        floorplan[visible].classList.remove('visible');
+        floorLink[activeFloor].classList.remove('current');
+        visible++
+        activeFloor = (floorLink.length - 1) - visible;
+    }
+    floorplan[visible].classList.add('visible');
+    floorLink[activeFloor].classList.add('current');
+    checkButtons()
+}
 
-var flatOne = document.getElementsByClassName('background-flat-one');
-console.log(flatOne);
+function goDown() {
+    if (visible > 0) {
+        floorplan[visible].classList.remove('visible');
+        floorLink[activeFloor].classList.remove('current');
+        visible--
+        activeFloor = (floorLink.length - 1) - visible;
+    }
+    floorplan[visible].classList.add('visible');
+    floorLink[activeFloor].classList.add('current');
+    checkButtons()
+}
 
-var textBox1 = document.querySelector('.text-box--1');
+function jumpToFloor(floor) {
+    floorplan[visible].classList.remove('visible');
+    floorLink[activeFloor].classList.remove('current');
+    visible = floor;
+    activeFloor = (floorLink.length - 1) - visible;
+    floorplan[visible].classList.add('visible');
+    floorLink[activeFloor].classList.add('current');
+    checkButtons()
+}
 
-var flatTwo = document.getElementsByClassName('background-flat-two');
-console.log(flatTwo);
+function checkButtons() {
+    var max = floorplan.length - 1;
+    if (visible > 0) {
+        downButton.classList.add('active');
+    } else {
+        downButton.classList.remove('active');
+    }
+    if (visible < max) {
+        upButton.classList.add('active');
+    } else {
+        upButton.classList.remove('active');
+    }
+}
 
-var textBox2 = document.querySelector('.text-box--2');
+var flatOne = document.getElementsByClassName('background--flat-one');
+var flatTwo = document.getElementsByClassName('background--flat-two');
+var flatThree = document.getElementsByClassName('background--flat-three');
+var flatFour = document.getElementsByClassName('background--flat-four');
+var flatFive = document.getElementsByClassName('background--flat-five');
+var flatSix = document.getElementsByClassName('background--flat-six');
+var flatSeven = document.getElementsByClassName('background--flat-seven');
 
-//onMouseEnter
+var textBox = document.getElementsByClassName('text-box');
 
 function onMouseEnter(flat) {
-    if (flat === 1) {
+    if (flat === 0) {
         for (let i = 0; i < flatOne.length; i++) {
             flatOne[i].classList.add("visible");
         }
-        textBox1.classList.add("select");
     }
-    if (flat === 2) {
+    if (flat === 1) {
         for (let i = 0; i < flatTwo.length; i++) {
             flatTwo[i].classList.add("visible");
         }
-        textBox2.classList.add("select");
     }
+    if (flat === 2) {
+        for (let i = 0; i < flatThree.length; i++) {
+            flatThree[i].classList.add("visible");
+        }
+    }
+    if (flat === 3) {
+        for (let i = 0; i < flatFour.length; i++) {
+            flatFour[i].classList.add("visible");
+        }
+    }
+    if (flat === 4) {
+        for (let i = 0; i < flatFive.length; i++) {
+            flatFive[i].classList.add("visible");
+        }
+    }
+    if (flat === 5) {
+        for (let i = 0; i < flatSix.length; i++) {
+            flatSix[i].classList.add("visible");
+        }
+    }
+    if (flat === 6) {
+        for (let i = 0; i < flatSeven.length; i++) {
+            flatSeven[i].classList.add("visible");
+        }
+    }
+    textBox[flat].classList.add("select");
 }
 
-// onmouseleave
-
 function onMouseLeave(flat) {
-    if (flat === 1) {
+    if (flat === 0) {
         for (let i = 0; i < flatOne.length; i++) {
             flatOne[i].classList.remove("visible");
         }
-        textBox1.classList.remove("select");
     }
-    if (flat === 2) {
+    if (flat === 1) {
         for (let i = 0; i < flatTwo.length; i++) {
             flatTwo[i].classList.remove("visible");
         }
-        textBox2.classList.remove("select");
     }
+    if (flat === 2) {
+        for (let i = 0; i < flatThree.length; i++) {
+            flatThree[i].classList.remove("visible");
+        }
+    }
+    if (flat === 3) {
+        for (let i = 0; i < flatFour.length; i++) {
+            flatFour[i].classList.remove("visible");
+        }
+    }
+    if (flat === 4) {
+        for (let i = 0; i < flatFive.length; i++) {
+            flatFive[i].classList.remove("visible");
+        }
+    }
+    if (flat === 5) {
+        for (let i = 0; i < flatSix.length; i++) {
+            flatSix[i].classList.remove("visible");
+        }
+    }
+    if (flat === 6) {
+        for (let i = 0; i < flatSeven.length; i++) {
+            flatSeven[i].classList.remove("visible");
+        }
+    }
+    textBox[flat].classList.remove("select");
 }
+
+// when flat info is within sections on apartments page, currently <a> link to external appartment page in html
+
+// function linkTo(page) {
+//     if (flat === 0) {
+//         for (let i = 0; i < flatOne.length; i++) {
+//             flatOne[i].classList.remove("visible");
+//         }
+//         // textBox1.classList.remove("select");
+//     }
+//     if (flat === 1) {
+//         for (let i = 0; i < flatTwo.length; i++) {
+//             flatTwo[i].classList.remove("visible");
+//         }
+//         // textBox2.classList.remove("select");
+//     }
+//     if (flat === 2) {
+//         for (let i = 0; i < flatThree.length; i++) {
+//             flatThree[i].classList.remove("visible");
+//         }
+//         // textBox2.classList.remove("select");
+//     }
+//     if (flat === 3) {
+//         for (let i = 0; i < flatFour.length; i++) {
+//             flatFour[i].classList.remove("visible");
+//         }
+//         // textBox2.classList.remove("select");
+//     }
+//     if (flat === 4) {
+//         for (let i = 0; i < flatFive.length; i++) {
+//             flatFive[i].classList.remove("visible");
+//         }
+//         // textBox2.classList.remove("select");
+//     }
+//     if (flat === 5) {
+//         for (let i = 0; i < flatSix.length; i++) {
+//             flatSix[i].classList.remove("visible");
+//         }
+//         // textBox2.classList.remove("select");
+//     }
+//     if (flat === 6) {
+//         window.location.href = 'YOUR URL';
+//     }
+// }
 
 
 //flat info page:

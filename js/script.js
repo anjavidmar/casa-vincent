@@ -88,19 +88,16 @@ function closeSlideshow() {
 var fixedHeight = document.getElementsByClassName('fixed-height');
 var maxHeight = document.getElementsByClassName('max-height');
 var minHeight = document.getElementsByClassName('min-height');
+var floorplans = document.getElementsByClassName('floorplans-container__inner');
 var mainHeight_h = h;
 
 if (w > 639) {
     mainHeight_h = h - 105;
-    console.log(h + " - 105", mainHeight_h);
 } else if (w > 415) {
     mainHeight_h = h - 115;
-    console.log(h + " - 115", mainHeight_h);
 } else {
     mainHeight_h = h - 155;
-    console.log(h + " - 155", mainHeight_h);
 }
-console.log(mainHeight_h);
 
 
 if (fixedHeight.length > 0) {
@@ -118,6 +115,14 @@ if (maxHeight.length > 0) {
 if (minHeight.length > 0) {
     for (let i = 0; i < maxHeight.length; i++) {
         minHeight[i].style.minHeight = mainHeight_h + 'px';
+    }
+}
+
+if (floorplans.length > 0) {
+    var floorplans_w = mainHeight_h * 1.2;
+
+    for (let i = 0; i < floorplans.length; i++) {
+        floorplans[i].style.maxWidth = floorplans_w + 'px';
     }
 }
 
@@ -164,6 +169,14 @@ window.addEventListener('resize', function() {
 
         for (let i = 0; i < maxHeight.length; i++) {
             maxHeight[i].style.maxHeight = mainHeight_h + 'px';
+        }
+    }
+
+    if (floorplans.length > 0) {
+        var floorplans_w = mainHeight_h * 1.2;
+
+        for (let i = 0; i < floorplans.length; i++) {
+            floorplans[i].style.maxWidth = floorplans_w + 'px';
         }
     }
 })
