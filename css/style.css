@@ -324,8 +324,6 @@ aside {
   position: fixed;
   right: 0;
   top: 0;
-  transition-property: transform;
-  transition-duration: 2s;
 }
 aside footer {
   bottom: 0;
@@ -469,6 +467,8 @@ aside#site-navigation.site-navigation--opened {
   -ms-transform: translate(0, 0);
   -o-transform: translate(0, 0);
   transform: translate(0, 0);
+  transition-property: transform;
+  transition-duration: 2s;
 }
 aside#callback-form {
   background-color: #f6f9f080;
@@ -497,6 +497,8 @@ aside#callback-form .form-container {
   width: 100%;
 }
 aside#callback-form.callback-form--opened {
+  transition-property: transform;
+  transition-duration: 2s;
   -webkit-transform: translate(0, 0);
   -moz-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
@@ -519,6 +521,8 @@ aside#contact-form .form-container {
   text-align: center;
 }
 aside#contact-form.contact-form--opened {
+  transition-property: transform;
+  transition-duration: 2s;
   -webkit-transform: translate(0, 0);
   -moz-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
