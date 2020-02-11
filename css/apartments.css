@@ -246,11 +246,11 @@
   transform: rotate(-45deg);
 }
 .apartments .house-nagivation--desktop .button-container .button.active {
-  border-color: #0c080a;
+  border-color: #93837f;
   cursor: pointer;
 }
 .apartments .house-nagivation--desktop .button-container .button.active:hover {
-  border-color: #93837f;
+  border-color: #0c080a;
 }
 .apartments .house-nagivation--desktop li.desktop-floor-navigation {
   position: relative;
