@@ -8,13 +8,15 @@ var activeFloor = (floorLink.length - 1) - visible;
 var upButton = document.getElementsByClassName('button--up')[0];
 var downButton = document.getElementsByClassName('button--down')[0];
 
-floorplan[visible].classList.add('visible');
-floorLink[activeFloor].classList.add('current');
-if (visible === 0) {
-    downButton.classList.remove('active');
-}
-if (visible === floorplan.length - 1) {
-    upButton.classList.remove('active');
+if (floorplans.length > 0) {
+    floorplan[visible].classList.add('visible');
+    floorLink[activeFloor].classList.add('current');
+    if (visible === 0) {
+        downButton.classList.remove('active');
+    }
+    if (visible === floorplan.length - 1) {
+        upButton.classList.remove('active');
+    }
 }
 
 function goUp() {
