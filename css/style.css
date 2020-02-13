@@ -38,6 +38,10 @@ h3 {
   line-height: 1.25;
 }
 
+h5 {
+  font-size: 1.125em;
+}
+
 p.margined {
   margin-bottom: 1em;
 }
@@ -88,8 +92,9 @@ a.link {
 }
 
 .site, .header__inner, .footer__inner, .form-container__inner {
-  min-width: 260px;
   max-width: 1400px;
+  margin: 0 auto;
+  min-width: 260px;
   padding: 0 10px;
 }
 
@@ -495,6 +500,9 @@ aside#callback-form .form-container {
   text-align: center;
   top: 0;
   width: 100%;
+}
+aside#callback-form footer .footer__left {
+  opacity: 0;
 }
 aside#callback-form.callback-form--opened {
   transition-property: transform;

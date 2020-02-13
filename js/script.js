@@ -30,11 +30,7 @@ console.log(header, header_h);
 
 // menu/close button scripts:
 
-var button = document.querySelector('.animated-button');
-var callback = document.getElementById('callback-form');
-var contact = document.getElementById('contact-form');
-var menu = document.getElementById('site-navigation');
-var slideshow = document.getElementById('slideshow');
+
 
 function toggleMenu() {
     button.classList.toggle("animated-button--show")
@@ -63,27 +59,11 @@ function closeSlideshow() {
     hidePhotos()
 }
 
-// var class 
-// el.classList.toggle(class[a])
-
-// $('.menu-button').on('click', function() {
-//     console.log('hello');
-//     $('.animated-button').toggleClass("animated-button--hide");
-//     $('.animated-button').toggleClass("animated-button--show");
-// });
-
-// window.addEventListener("resize", function() {
-
-// main.style.paddingTop = header_h + 'px';
-
-// window.addEventListener('resize', function() {
-//     header_h = header.offsetHeight;
-
-//     main.style.paddingTop = header_h + 'px';
-// })
-
-
-
+var button = document.querySelector('.animated-button');
+var callback = document.getElementById('callback-form');
+var contact = document.getElementById('contact-form');
+var menu = document.getElementById('site-navigation');
+var slideshow = document.getElementById('slideshow');
 
 var fixedHeight = document.getElementsByClassName('fixed-height');
 var maxHeight = document.getElementsByClassName('max-height');
@@ -98,7 +78,6 @@ if (w > 639) {
 } else {
     mainHeight_h = h - 155;
 }
-
 
 if (fixedHeight.length > 0) {
     for (let i = 0; i < fixedHeight.length; i++) {
@@ -126,11 +105,30 @@ if (floorplans.length > 0) {
     }
 }
 
+var videoContainer = document.getElementsByClassName('video-container');
+var videoContainer_w;
+
+if (videoContainer.length > 0) {
+    videoContainer_w = videoContainer[0].offsetWidth;
+}
+
+var video = document.getElementsByClassName('youtube-video');
+var video_w;
+var video_h;
+
+if (video.length > 0) {
+    video_w = videoContainer_w;
+    video_h = videoContainer_w * 0.5625;
+
+    for (let i = 0; i < video.length; i++) {
+        video[i].width = video_w;
+        video[i].height = video_h;
+    }
+}
+
 if (window.pageYOffset > 3) {
     header.classList.add("opaque-on-scroll")
 }
-
-console.log(window.pageYOffset);
 
 window.addEventListener("scroll", function() {
     if (window.pageYOffset > 3) {
@@ -177,6 +175,20 @@ window.addEventListener('resize', function() {
 
         for (let i = 0; i < floorplans.length; i++) {
             floorplans[i].style.maxWidth = floorplans_w + 'px';
+        }
+    }
+
+    if (videoContainer.length > 0) {
+        videoContainer_w = videoContainer[0].offsetWidth;
+    }
+
+    if (video.length > 0) {
+        video_w = videoContainer_w;
+        video_h = videoContainer_w * 0.5625;
+
+        for (let i = 0; i < video.length; i++) {
+            video[i].width = video_w;
+            video[i].height = video_h;
         }
     }
 })
