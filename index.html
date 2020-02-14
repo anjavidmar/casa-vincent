@@ -137,8 +137,80 @@
                 </div>
             </aside>
             <main id="main" class="home">
-                <div class="fixed-height">
-                    <img class="main-placeholder" src="./assets/images/placeholder_16x9.png" alt="placeholder" />
+                <div class="home__inner max-home-width">
+                    <div class="header-container align-left">
+                        <h4><span class="larger">7</span> različno velikih stanovanj na prodaj v moderni, večstanovanjski hiši v Njivicah na otoku Krk.</h4>
+                    </div>
+                    <div class="hero-container">
+                        <img class="hero-spaceholder max-height" src="./assets/images/square-spaceholder.png">
+                        <img id="hero" class="hero" src="./assets/images/haus-auf-krk.jpg" alt="Drone shot of the house with a view of the sea behind it.">
+                    </div>
+                    <div class="cta-container">
+                        <div class="cta-container__inner align-left">
+                            <div class="left">
+                                <p class="margined">
+                                    Stanovanja imajo od 38 m2 do 97 m2 stanovanske povrsine, oglejte si kaksna so in kako so rasporejena po hisi:
+                                </p>
+                            </div><div class="right">
+                                <div class="button-link-container">
+                                    <div class="decorative-line"></div>
+                                    <a href="./apartments.html"><span class="button-border">
+                                        <span class="button">Apartmaji</span>
+                                    </span></a>
+                                </div>
+                            </div>
+                        </div><div class="cta-container__inner align-left">
+                            <div class="left">
+                                <p class="margined">
+                                    Odlična lokacija v neposredni bližini obale in centra mesta Njivice, oglejte si na zemljevidu:
+                                </p>
+                            </div><div class="right">
+                                <div class="button-link-container">
+                                    <div class="decorative-line"></div>
+                                    <a href="./location.html"><span class="button-border">
+                                        <span class="button">Lokacija</span>
+                                    </span></a>
+                                </div>
+                            </div>
+                        </div><div class="cta-container__inner align-left">
+                            <div class="left">
+                                <p class="margined">
+                                    Želite več informacij? Stoptipe v stik direktno s lastnikom:
+                                </p>
+                            </div><div class="right">
+                                <div class="button-link-container">
+                                    <div class="decorative-line"></div>
+                                    <a class="link" onclick="toggleForm(contact, 2, 3)"><span class="button-border">
+                                        <span class="button">Kontakt</span>
+                                    </span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cta-container--desktop">
+                            <div class="cta-container__inner">
+                                <div class="button-link-container">
+                                    <div class="decorative-line"></div>
+                                    <a href="./apartments.html"><span class="button-border">
+                                        <span class="button">Apartmaji</span>
+                                    </span></a>
+                                </div>
+                            </div><div class="cta-container__inner">
+                                <div class="button-link-container">
+                                    <div class="decorative-line"></div>
+                                    <a href="./location.html"><span class="button-border">
+                                        <span class="button">Lokacija</span>
+                                    </span></a>
+                                </div>
+                            </div><div class="cta-container__inner">
+                                <div class="button-link-container">
+                                    <div class="decorative-line"></div>
+                                    <a class="link" onclick="toggleForm(contact, 2, 3)"><span class="button-border">
+                                        <span class="button">Kontakt</span>
+                                    </span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
             <!-- <aside id="callback-form" class="callback-form--opened"> -->
@@ -166,7 +238,7 @@
                     <div class="form-container__inner">
                         <form class="callback-form" action="https://formspree.io/mwkoeejk" method="POST">
                             <h3>
-                                <span>Please Give Me A Call On:</span>
+                                <span>Pustite številko in prejeli boste klic.</span>
                             </h3>
                             <fieldset>
                                 <div class="input-container">
@@ -244,9 +316,33 @@
                     <div class="form-container__inner">
                         <form class="contact-form" action="https://formspree.io/mzbrppww" method="POST">
                             <h3>
-                                <span>Contact Us:</span>
+                                <span>Stopite v stik</span>
                             </h3>
-                            <!-- <p>Use the form below or send us an email on <strong class="smaller"><a href="mailto:andreja.vidmar@a3doo.si">andreja.vidmar@a3doo.si</a></strong></p> -->
+                            <p class="large margined">Za več informacij in izražanje zanimanja se obrnite neposredno na lastnika:</p>
+                            <div class="contact-info">
+                                <div class="contact-info__inner">
+                                    <div class="left">
+                                        <div class="img-container">
+                                            <img src="./assets/images/logo.png" alt="Haus auf Krk logo">
+                                        </div>
+                                    </div><div class="right">
+                                        <div class="contact-details-container">
+                                            <p><strong class="larger">Andreja Vidmar</strong></p>
+                                            <p class="margined">
+                                                <span>e-mail: </span>
+                                                <span><a href="mailto:andreja.vidmar@a3doo.si"><u>andreja.vidmar@a3doo.si</u></a></span>
+                                            </p>
+                                            <p class="margined">
+                                                <span>tel: </span>
+                                                <span><a href="tel:+386 41 686 434">+386 41 686 434</a></span>
+                                            </p>
+                                            <p>
+                                                Lahko tudi izpolnete spodnji kontaktni obrazec:
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <fieldset>
                                 <div class="input-container">
                                     <input type="text" name="name" placeholder="Your name *" required />
@@ -266,30 +362,30 @@
                             </div>
                         </form>
                     </div>
-                </div>
-                <footer>
-                    <div class="footer__inner">
-                        <div class="footer__left">
-                            <div class="copyright">
-                                <em>2020 &copy; Haus auf Krk</em>
-                                <!-- <p class="email"><strong class="smaller">
-                                    <a href="mailto:andreja.vidmar@a3doo.si">andreja.vidmar@a3doo.si</a>
-                                    <a class="link" onclick="toggleForm(contact, 2, 3)">andreja.vidmar@a3doo.si</a>
-                                </strong></p> -->
-                            </div>
-                        </div><div class="footer__right">
-                            <div class="author">
-                                <!-- <em class="smaller">Developed by&nbsp;</em> -->
-                                <!-- <h6 class="author"><a>Anja Vidmar</a></h6> -->
-                                <h6 class="author"><a>Andreja Vidmar</a></h6>
-                                <p class="email"><strong class="smaller">
-                                    <a href="mailto:andreja.vidmar@a3doo.si"><u>andreja.vidmar@a3doo.si</u></a>
-                                    <!-- <a class="link" onclick="toggleForm(contact, 2, 3)"><u>andreja.vidmar@a3doo.si</u></a> -->
-                                </strong></p>
+                    <footer>
+                        <div class="footer__inner">
+                            <div class="footer__left">
+                                <div class="copyright">
+                                    <em>2020 &copy; Haus auf Krk</em>
+                                    <!-- <p class="email"><strong class="smaller">
+                                        <a href="mailto:andreja.vidmar@a3doo.si">andreja.vidmar@a3doo.si</a>
+                                        <a class="link" onclick="toggleForm(contact, 2, 3)">andreja.vidmar@a3doo.si</a>
+                                    </strong></p> -->
+                                </div>
+                            </div><div class="footer__right">
+                                <div class="author">
+                                    <!-- <em class="smaller">Developed by&nbsp;</em> -->
+                                    <!-- <h6 class="author"><a>Anja Vidmar</a></h6> -->
+                                    <h6 class="author"><a>Andreja Vidmar</a></h6>
+                                    <p class="email"><strong class="smaller">
+                                        <a href="mailto:andreja.vidmar@a3doo.si" target="_blank"><u>andreja.vidmar@a3doo.si</u></a>
+                                        <!-- <a class="link" onclick="toggleForm(contact, 2, 3)"><u>andreja.vidmar@a3doo.si</u></a> -->
+                                    </strong></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </footer>
+                    </footer>
+                </div>
             </aside>
             <footer>
                 <div class="footer__left">
@@ -302,11 +398,9 @@
                     </div>
                 </div><div class="footer__right">
                     <div class="author">
-                        <!-- <em class="smaller">Developed by&nbsp;</em> -->
-                        <!-- <h6 class="author"><a>Anja Vidmar</a></h6> -->
                         <h6 class="author"><a>Andreja Vidmar</a></h6>
                         <p class="email"><strong class="smaller">
-                            <!-- <a href="mailto:andreja.vidmar@a3doo.si"><u>andreja.vidmar@a3doo.si</u></a> -->
+                            <!-- <a href="mailto:andreja.vidmar@a3doo.si" target="_blank"><u>andreja.vidmar@a3doo.si</u></a> -->
                             <a class="link" onclick="toggleForm(contact, 2, 3)"><u>andreja.vidmar@a3doo.si</u></a>
                         </strong></p>
                     </div>

@@ -8,6 +8,8 @@ var site = document.getElementById('site');
 var site_h = site.offsetHeight;
 var site_w = site.offsetWidth;
 
+// site.style.minHeight = h + "px";
+
 console.log('screen height = ' + h, 'screen width = ' + w);
 console.log('site height = ' + site_h, 'site width = ' + site_w);
 
@@ -26,11 +28,21 @@ var header_h = header.offsetHeight;
 
 var main = document.getElementById('main');
 
+// main.style.minHeight = h + "px";
 console.log(header, header_h);
 
 // menu/close button scripts:
 
+function setTransition() {
+    var aside = document.getElementsByTagName('aside');
 
+    console.log(aside);
+
+    for (let i = 0; i < aside.length; i++) {
+        // console.log(aside[i]);
+        aside[i].classList.add('smooth-transition');
+    }
+}
 
 function toggleMenu() {
     button.classList.toggle("animated-button--show")
@@ -59,6 +71,17 @@ function closeSlideshow() {
     hidePhotos()
 }
 
+// home page
+
+var homeInner = document.getElementsByClassName('home__inner');
+var hero = document.getElementById('hero');
+var hero_w;
+
+if (homeInner.length > 0) {
+    hero_w = hero.offsetWidth;
+    console.log("hero_w : " + hero_w);
+}
+
 var button = document.querySelector('.animated-button');
 var callback = document.getElementById('callback-form');
 var contact = document.getElementById('contact-form');
@@ -68,6 +91,8 @@ var slideshow = document.getElementById('slideshow');
 var fixedHeight = document.getElementsByClassName('fixed-height');
 var maxHeight = document.getElementsByClassName('max-height');
 var minHeight = document.getElementsByClassName('min-height');
+var innerMinHeight = document.getElementsByClassName('min-height__inner');
+var maxHomeWidth = document.getElementsByClassName('max-home-width');
 var floorplans = document.getElementsByClassName('floorplans-container__inner');
 var mainHeight_h = h;
 
@@ -91,9 +116,28 @@ if (maxHeight.length > 0) {
     }
 }
 
+console.log(minHeight);
+
+
 if (minHeight.length > 0) {
-    for (let i = 0; i < maxHeight.length; i++) {
+    for (let i = 0; i < minHeight.length; i++) {
         minHeight[i].style.minHeight = mainHeight_h + 'px';
+    }
+}
+
+if (innerMinHeight.length > 0) {
+    var innerMinHeight_h = mainHeight_h - 56;
+
+    for (let i = 0; i < innerMinHeight.length; i++) {
+        innerMinHeight[i].style.minHeight = innerMinHeight_h + 'px';
+    }
+}
+
+if (maxHomeWidth.length > 0) {
+    var maxWidth = mainHeight_h * 1.65;
+
+    for (let i = 0; i < maxHomeWidth.length; i++) {
+        maxHomeWidth[i].style.maxWidth = maxWidth + 'px';
     }
 }
 
@@ -129,6 +173,12 @@ if (video.length > 0) {
 if (window.pageYOffset > 3) {
     header.classList.add("opaque-on-scroll")
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    setTimeout(() => {
+        setTransition()
+    }, 2000);
+});
 
 window.addEventListener("scroll", function() {
     if (window.pageYOffset > 3) {

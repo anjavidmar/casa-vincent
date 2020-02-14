@@ -3,19 +3,29 @@ console.log("hello apartments!");
 var visible = 0;
 var floorplan = document.getElementsByClassName('floorplan');
 var floorLink = document.getElementsByClassName('desktop-floor-navigation');
+var floorLinkMobile = document.getElementsByClassName('mobile-floor-navigation');
 var activeFloor = (floorLink.length - 1) - visible;
 
-var upButton = document.getElementsByClassName('button--up')[0];
-var downButton = document.getElementsByClassName('button--down')[0];
+var upButton = document.getElementsByClassName('arrow--up');
+console.log(upButton);
+
+var downButton = document.getElementsByClassName('arrow--down');
+console.log(downButton);
+
 
 if (floorplans.length > 0) {
     floorplan[visible].classList.add('visible');
     floorLink[activeFloor].classList.add('current');
+    floorLinkMobile[visible].classList.add('current');
     if (visible === 0) {
-        downButton.classList.remove('active');
+        for (let i = 0; i < downButton.length; i++) {
+            downButton[i].classList.remove("active");
+        }
     }
     if (visible === floorplan.length - 1) {
-        upButton.classList.remove('active');
+        for (let i = 0; i < upButton.length; i++) {
+            upButton[i].classList.remove("active");
+        }
     }
 }
 
@@ -24,11 +34,13 @@ function goUp() {
     if (visible < max) {
         floorplan[visible].classList.remove('visible');
         floorLink[activeFloor].classList.remove('current');
+        floorLinkMobile[visible].classList.remove('current');
         visible++
         activeFloor = (floorLink.length - 1) - visible;
     }
     floorplan[visible].classList.add('visible');
     floorLink[activeFloor].classList.add('current');
+    floorLinkMobile[visible].classList.add('current');
     checkButtons()
 }
 
@@ -36,35 +48,47 @@ function goDown() {
     if (visible > 0) {
         floorplan[visible].classList.remove('visible');
         floorLink[activeFloor].classList.remove('current');
+        floorLinkMobile[visible].classList.remove('current');
         visible--
         activeFloor = (floorLink.length - 1) - visible;
     }
     floorplan[visible].classList.add('visible');
     floorLink[activeFloor].classList.add('current');
+    floorLinkMobile[visible].classList.add('current');
     checkButtons()
 }
 
 function jumpToFloor(floor) {
     floorplan[visible].classList.remove('visible');
     floorLink[activeFloor].classList.remove('current');
+    floorLinkMobile[visible].classList.remove('current');
     visible = floor;
     activeFloor = (floorLink.length - 1) - visible;
     floorplan[visible].classList.add('visible');
     floorLink[activeFloor].classList.add('current');
+    floorLinkMobile[visible].classList.add('current');
     checkButtons()
 }
 
 function checkButtons() {
     var max = floorplan.length - 1;
     if (visible > 0) {
-        downButton.classList.add('active');
+        for (let i = 0; i < downButton.length; i++) {
+            downButton[i].classList.add("active");
+        }
     } else {
-        downButton.classList.remove('active');
+        for (let i = 0; i < downButton.length; i++) {
+            downButton[i].classList.remove("active");
+        }
     }
     if (visible < max) {
-        upButton.classList.add('active');
+        for (let i = 0; i < upButton.length; i++) {
+            upButton[i].classList.add("active");
+        }
     } else {
-        upButton.classList.remove('active');
+        for (let i = 0; i < upButton.length; i++) {
+            upButton[i].classList.remove("active");
+        }
     }
 }
 

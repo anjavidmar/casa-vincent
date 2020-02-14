@@ -138,142 +138,79 @@
                 </div>
             </aside>
             <main id="main" class="apartments">
-                <div class="house-nagivation house-nagivation--mobile">
-                    <!-- <p><span onclick="goUp()">go up &uArr; </span>&nbsp;|&nbsp;<span onclick="goDown()"> &dArr; go down</span></p> -->
-                </div>
-                <div class="floorplans-container">
-                    <div class="floorplans-container__inner">
-                        <div class="floorplans">
-                            <img class="spaceholder" src="./assets/floorplans/floorplan-spaceholder.png" />
-                            <div class="floorplan ground">
-                                <div class="background background--flat-one part-one"></div>
-                                <div class="background background--flat-one part-two"></div>
-                                <div class="background background--flat-one part-three"></div>
-                                <div class="background background--flat-one part-four"></div>
-                                <div class="background background--flat-two part-five"></div>
-                                <div class="background background--flat-two part-six"></div>
-                                <img src="./assets/floorplans/floorplan-ground.png" alt="">
-                                <div class="text-box text-box--available text-box--1" onmouseenter="onMouseEnter(0)" onmouseleave="onMouseLeave(0)">
-                                    <a href="./apartments/apartment-1.html">
-                                        <div class="flat-number">
-                                            <div class="flat-number__border">
-                                                <div class="flat-number__inner">
-                                                    <div class="space-holder"></div>
-                                                    <h4 class="number">1</h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="flat-info">
-                                            <div class="left">
-                                            </div><div class="right">
-                                                <p>
-                                                    68,40 m<sup>2</sup><br />
-                                                    <em>Available for sale</em>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="text-box text-box--available text-box--2" onmouseenter="onMouseEnter(1)" onmouseleave="onMouseLeave(1)"><a href="./apartments/apartment-2.html"></a>
-                                    <div class="flat-number">
-                                        <div class="flat-number__border">
-                                            <div class="flat-number__inner">
-                                                <h4 class="number">2</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flat-info">
-                                        <div class="left">
-                                        </div><div class="right">
-                                            <p>
-                                                38,50 m<sup>2</sup><br />
-                                                <em>Available for sale</em>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="interactive flat-one part-one" onmouseenter="onMouseEnter(0)" onmouseleave="onMouseLeave(0)"><a href="./apartments/apartment-1.html"></a></div>
-                                <div class="interactive flat-one part-two" onmouseenter="onMouseEnter(0)" onmouseleave="onMouseLeave(0)"><a href="./apartments/apartment-1.html"></a></div>
-                                <div class="interactive flat-one part-three" onmouseenter="onMouseEnter(0)" onmouseleave="onMouseLeave(0)"><a href="./apartments/apartment-1.html"></a></div>
-                                <div class="interactive flat-one part-four" onmouseenter="onMouseEnter(0)" onmouseleave="onMouseLeave(0)"><a href="./apartments/apartment-1.html"></a></div>
-                                <div class="interactive flat-two part-five" onmouseenter="onMouseEnter(1)" onmouseleave="onMouseLeave(1)"><a href="./apartments/apartment-2.html"></a></div>
-                                <div class="interactive flat-two part-six" onmouseenter="onMouseEnter(1)" onmouseleave="onMouseLeave(1)"><a href="./apartments/apartment-2.html"></a></div>
+                <div class="min-height__inner">
+                    <div class="house-nagivation house-nagivation--mobile">
+                        <div class="house-nagivation__inner align-center">
+                            <div class="arrow-container arrow-container--down">
+                                <div class="arrow arrow--down active" onclick="goDown()"></div>
                             </div>
-                            <div class="floorplan first">
-                                <div class="background background--flat-three part-one"></div>
-                                <div class="background background--flat-three part-two"></div>
-                                <div class="background background--flat-three part-three"></div>
-                                <div class="background background--flat-three part-four"></div>
-                                <div class="background background--flat-three part-five"></div>
-                                <div class="background sold background--flat-four part-six"></div>
-                                <div class="background sold background--flat-four part-seven"></div>
-                                <div class="background sold background--flat-four part-eight"></div>
-                                <img src="./assets/floorplans/floorplan-first.png" alt="">
-                                <div class="text-box text-box--available text-box--3" onmouseenter="onMouseEnter(2)" onmouseleave="onMouseLeave(2)">
-                                    <a href="./apartments/apartment-3.html">
-                                        <div class="flat-number">
-                                            <div class="flat-number__border">
-                                                <div class="flat-number__inner">
-                                                    <div class="space-holder"></div>
-                                                    <h4 class="number">3</h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="flat-info">
-                                            <div class="left">
-                                            </div><div class="right">
-                                                <p>
-                                                    66,70 m<sup>2</sup><br />
-                                                    <em>Available for sale</em>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="text-box text-box--sold text-box--4" onmouseenter="onMouseEnter(3)" onmouseleave="onMouseLeave(3)">
-                                    <div class="flat-number">
-                                        <div class="flat-number__border">
-                                            <div class="flat-number__inner">
-                                                <h4 class="number">4</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flat-info">
-                                        <div class="left">
-                                        </div><div class="right">
-                                            <p>
-                                                40,10 m<sup>2</sup><br />
-                                                <em>Sold</em>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="interactive flat-three part-one" onmouseenter="onMouseEnter(2)" onmouseleave="onMouseLeave(2)"><a href="./apartments/apartment-3.html"></a></div>
-                                <div class="interactive flat-three part-two" onmouseenter="onMouseEnter(2)" onmouseleave="onMouseLeave(2)"><a href="./apartments/apartment-3.html"></a></div>
-                                <div class="interactive flat-three part-three" onmouseenter="onMouseEnter(2)" onmouseleave="onMouseLeave(2)"><a href="./apartments/apartment-3.html"></a></div>
-                                <div class="interactive flat-three part-four" onmouseenter="onMouseEnter(2)" onmouseleave="onMouseLeave(2)"><a href="./apartments/apartment-3.html"></a></div>
-                                <div class="interactive flat-three part-five" onmouseenter="onMouseEnter(2)" onmouseleave="onMouseLeave(2)"><a href="./apartments/apartment-3.html"></a></div>
-                                <div class="interactive flat-four part-six" onmouseenter="onMouseEnter(3)" onmouseleave="onMouseLeave(3)"></div>
-                                <div class="interactive flat-four part-seven" onmouseenter="onMouseEnter(3)" onmouseleave="onMouseLeave(3)"></div>
-                                <div class="interactive flat-four part-eight" onmouseenter="onMouseEnter(3)" onmouseleave="onMouseLeave(3)"></div>
+                            <div class="list-container">
+                                <ul>
+                                    <li class="mobile-floor-navigation floor-navigation">
+                                        <h4><a onclick="jumpToFloor(0)">
+                                            <span class="border">0</span>
+                                        </a></h4>
+                                    </li>
+                                    <li class="mobile-floor-navigation floor-navigation">
+                                        <h4><a onclick="jumpToFloor(1)">
+                                            <span class="border">1</span>
+                                        </a></h4>
+                                    </li>
+                                    <li class="mobile-floor-navigation floor-navigation">
+                                        <h4><a onclick="jumpToFloor(2)">
+                                            <span class="border">2</span>
+                                        </a></h4>
+                                    </li>
+                                    <li class="mobile-floor-navigation floor-navigation">
+                                        <h4><a onclick="jumpToFloor(3)">
+                                            <span class="border">3</span>
+                                        </a></h4>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="floorplan second">
-                                <div class="background background--flat-five part-one"></div>
-                                <div class="background background--flat-five part-two"></div>
-                                <div class="background background--flat-five part-three"></div>
-                                <div class="background background--flat-five part-four"></div>
-                                <div class="background background--flat-five part-five"></div>
-                                <div class="background background--flat-six part-six"></div>
-                                <div class="background background--flat-six part-seven"></div>
-                                <div class="background background--flat-six part-eight"></div>
-                                <img src="./assets/floorplans/floorplan-first.png" alt="">
-                                <div class="text-box text-box--available text-box--5" onmouseenter="onMouseEnter(4)" onmouseleave="onMouseLeave(4)">
-                                    <a href="./apartments/apartment-5.html">
+                            <div class="arrow-container arrow-container--up">
+                                <div class="arrow arrow--up active" onclick="goUp()"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floorplans-container">
+                        <div class="floorplans-container__inner">
+                            <div class="floorplans">
+                                <img class="spaceholder" src="./assets/floorplans/floorplan-spaceholder.png" />
+                                <div class="floorplan ground">
+                                    <div class="background background--flat-one part-one"></div>
+                                    <div class="background background--flat-one part-two"></div>
+                                    <div class="background background--flat-one part-three"></div>
+                                    <div class="background background--flat-one part-four"></div>
+                                    <div class="background background--flat-two part-five"></div>
+                                    <div class="background background--flat-two part-six"></div>
+                                    <img src="./assets/floorplans/floorplan-ground.png" alt="">
+                                    <div class="text-box text-box--available text-box--1" onmouseenter="onMouseEnter(0)" onmouseleave="onMouseLeave(0)">
+                                        <a href="./apartments/apartment-1.html">
+                                            <div class="flat-number">
+                                                <div class="flat-number__border">
+                                                    <div class="flat-number__inner">
+                                                        <div class="space-holder"></div>
+                                                        <h4 class="number">1</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flat-info">
+                                                <div class="left">
+                                                </div><div class="right">
+                                                    <p>
+                                                        68,40 m<sup>2</sup><br />
+                                                        <em>Available for sale</em>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="text-box text-box--available text-box--2" onmouseenter="onMouseEnter(1)" onmouseleave="onMouseLeave(1)"><a href="./apartments/apartment-2.html"></a>
                                         <div class="flat-number">
                                             <div class="flat-number__border">
                                                 <div class="flat-number__inner">
-                                                    <div class="space-holder"></div>
-                                                    <h4 class="number">5</h4>
+                                                    <h4 class="number">2</h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -281,19 +218,55 @@
                                             <div class="left">
                                             </div><div class="right">
                                                 <p>
-                                                    66,70 m<sup>2</sup><br />
+                                                    38,50 m<sup>2</sup><br />
                                                     <em>Available for sale</em>
                                                 </p>
                                             </div>
                                         </div>
-                                    </a>
+                                    </div>
+                                    <div class="interactive flat-one part-one" onmouseenter="onMouseEnter(0)" onmouseleave="onMouseLeave(0)"><a href="./apartments/apartment-1.html"></a></div>
+                                    <div class="interactive flat-one part-two" onmouseenter="onMouseEnter(0)" onmouseleave="onMouseLeave(0)"><a href="./apartments/apartment-1.html"></a></div>
+                                    <div class="interactive flat-one part-three" onmouseenter="onMouseEnter(0)" onmouseleave="onMouseLeave(0)"><a href="./apartments/apartment-1.html"></a></div>
+                                    <div class="interactive flat-one part-four" onmouseenter="onMouseEnter(0)" onmouseleave="onMouseLeave(0)"><a href="./apartments/apartment-1.html"></a></div>
+                                    <div class="interactive flat-two part-five" onmouseenter="onMouseEnter(1)" onmouseleave="onMouseLeave(1)"><a href="./apartments/apartment-2.html"></a></div>
+                                    <div class="interactive flat-two part-six" onmouseenter="onMouseEnter(1)" onmouseleave="onMouseLeave(1)"><a href="./apartments/apartment-2.html"></a></div>
                                 </div>
-                                <div class="text-box text-box--available text-box--6" onmouseenter="onMouseEnter(5)" onmouseleave="onMouseLeave(5)">
-                                    <a href="./apartments/apartment-6.html">
+                                <div class="floorplan first">
+                                    <div class="background background--flat-three part-one"></div>
+                                    <div class="background background--flat-three part-two"></div>
+                                    <div class="background background--flat-three part-three"></div>
+                                    <div class="background background--flat-three part-four"></div>
+                                    <div class="background background--flat-three part-five"></div>
+                                    <div class="background sold background--flat-four part-six"></div>
+                                    <div class="background sold background--flat-four part-seven"></div>
+                                    <div class="background sold background--flat-four part-eight"></div>
+                                    <img src="./assets/floorplans/floorplan-first.png" alt="">
+                                    <div class="text-box text-box--available text-box--3" onmouseenter="onMouseEnter(2)" onmouseleave="onMouseLeave(2)">
+                                        <a href="./apartments/apartment-3.html">
+                                            <div class="flat-number">
+                                                <div class="flat-number__border">
+                                                    <div class="flat-number__inner">
+                                                        <div class="space-holder"></div>
+                                                        <h4 class="number">3</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flat-info">
+                                                <div class="left">
+                                                </div><div class="right">
+                                                    <p>
+                                                        66,70 m<sup>2</sup><br />
+                                                        <em>Available for sale</em>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="text-box text-box--sold text-box--4" onmouseenter="onMouseEnter(3)" onmouseleave="onMouseLeave(3)">
                                         <div class="flat-number">
                                             <div class="flat-number__border">
                                                 <div class="flat-number__inner">
-                                                    <h4 class="number">6</h4>
+                                                    <h4 class="number">4</h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -302,90 +275,159 @@
                                             </div><div class="right">
                                                 <p>
                                                     40,10 m<sup>2</sup><br />
-                                                    <em>Available for sale</em>
+                                                    <em>Sold</em>
                                                 </p>
                                             </div>
                                         </div>
-                                    </a>
+                                    </div>
+                                    <div class="interactive flat-three part-one" onmouseenter="onMouseEnter(2)" onmouseleave="onMouseLeave(2)"><a href="./apartments/apartment-3.html"></a></div>
+                                    <div class="interactive flat-three part-two" onmouseenter="onMouseEnter(2)" onmouseleave="onMouseLeave(2)"><a href="./apartments/apartment-3.html"></a></div>
+                                    <div class="interactive flat-three part-three" onmouseenter="onMouseEnter(2)" onmouseleave="onMouseLeave(2)"><a href="./apartments/apartment-3.html"></a></div>
+                                    <div class="interactive flat-three part-four" onmouseenter="onMouseEnter(2)" onmouseleave="onMouseLeave(2)"><a href="./apartments/apartment-3.html"></a></div>
+                                    <div class="interactive flat-three part-five" onmouseenter="onMouseEnter(2)" onmouseleave="onMouseLeave(2)"><a href="./apartments/apartment-3.html"></a></div>
+                                    <div class="interactive flat-four part-six" onmouseenter="onMouseEnter(3)" onmouseleave="onMouseLeave(3)"></div>
+                                    <div class="interactive flat-four part-seven" onmouseenter="onMouseEnter(3)" onmouseleave="onMouseLeave(3)"></div>
+                                    <div class="interactive flat-four part-eight" onmouseenter="onMouseEnter(3)" onmouseleave="onMouseLeave(3)"></div>
                                 </div>
-                                <div class="interactive flat-five part-one" onmouseenter="onMouseEnter(4)" onmouseleave="onMouseLeave(4)"><a href="./apartments/apartment-5.html"></a></div>
-                                <div class="interactive flat-five part-two" onmouseenter="onMouseEnter(4)" onmouseleave="onMouseLeave(4)"><a href="./apartments/apartment-5.html"></a></div>
-                                <div class="interactive flat-five part-three" onmouseenter="onMouseEnter(4)" onmouseleave="onMouseLeave(4)"><a href="./apartments/apartment-5.html"></a></div>
-                                <div class="interactive flat-five part-four" onmouseenter="onMouseEnter(4)" onmouseleave="onMouseLeave(4)"><a href="./apartments/apartment-5.html"></a></div>
-                                <div class="interactive flat-five part-five" onmouseenter="onMouseEnter(4)" onmouseleave="onMouseLeave(4)"><a href="./apartments/apartment-5.html"></a></div>
-                                <div class="interactive flat-six part-six" onmouseenter="onMouseEnter(5)" onmouseleave="onMouseLeave(5)"><a href="./apartments/apartment-6.html"></a></div>
-                                <div class="interactive flat-six part-seven" onmouseenter="onMouseEnter(5)" onmouseleave="onMouseLeave(5)"><a href="./apartments/apartment-6.html"></a></div>
-                                <div class="interactive flat-six part-eight" onmouseenter="onMouseEnter(5)" onmouseleave="onMouseLeave(5)"><a href="./apartments/apartment-6.html"></a></div>
-                            </div>
-                            <div class="floorplan third">
-                                <div class="background background--flat-seven part-one"></div>
-                                <div class="background background--flat-seven part-two"></div>
-                                <div class="background background--flat-seven part-three"></div>
-                                <div class="background background--flat-seven part-four"></div>
-                                <img src="./assets/floorplans/floorplan-third.png" alt="">
-                                <div class="text-box text-box--available text-box--7" onmouseenter="onMouseEnter(6)" onmouseleave="onMouseLeave(6)">
-                                    <a href="./apartments/apartment-7.html">
-                                        <div class="flat-number">
-                                            <div class="flat-number__border">
-                                                <div class="flat-number__inner">
-                                                    <div class="space-holder"></div>
-                                                    <h4 class="number">7</h4>
+                                <div class="floorplan second">
+                                    <div class="background background--flat-five part-one"></div>
+                                    <div class="background background--flat-five part-two"></div>
+                                    <div class="background background--flat-five part-three"></div>
+                                    <div class="background background--flat-five part-four"></div>
+                                    <div class="background background--flat-five part-five"></div>
+                                    <div class="background background--flat-six part-six"></div>
+                                    <div class="background background--flat-six part-seven"></div>
+                                    <div class="background background--flat-six part-eight"></div>
+                                    <img src="./assets/floorplans/floorplan-first.png" alt="">
+                                    <div class="text-box text-box--available text-box--5" onmouseenter="onMouseEnter(4)" onmouseleave="onMouseLeave(4)">
+                                        <a href="./apartments/apartment-5.html">
+                                            <div class="flat-number">
+                                                <div class="flat-number__border">
+                                                    <div class="flat-number__inner">
+                                                        <div class="space-holder"></div>
+                                                        <h4 class="number">5</h4>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="flat-info">
-                                            <div class="left">
-                                            </div><div class="right">
-                                                <p>
-                                                    97,30 m<sup>2</sup><br />
-                                                    <em>Available for sale</em>
-                                                </p>
+                                            <div class="flat-info">
+                                                <div class="left">
+                                                </div><div class="right">
+                                                    <p>
+                                                        66,70 m<sup>2</sup><br />
+                                                        <em>Available for sale</em>
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
+                                        </a>
+                                    </div>
+                                    <div class="text-box text-box--available text-box--6" onmouseenter="onMouseEnter(5)" onmouseleave="onMouseLeave(5)">
+                                        <a href="./apartments/apartment-6.html">
+                                            <div class="flat-number">
+                                                <div class="flat-number__border">
+                                                    <div class="flat-number__inner">
+                                                        <h4 class="number">6</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flat-info">
+                                                <div class="left">
+                                                </div><div class="right">
+                                                    <p>
+                                                        40,10 m<sup>2</sup><br />
+                                                        <em>Available for sale</em>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="interactive flat-five part-one" onmouseenter="onMouseEnter(4)" onmouseleave="onMouseLeave(4)"><a href="./apartments/apartment-5.html"></a></div>
+                                    <div class="interactive flat-five part-two" onmouseenter="onMouseEnter(4)" onmouseleave="onMouseLeave(4)"><a href="./apartments/apartment-5.html"></a></div>
+                                    <div class="interactive flat-five part-three" onmouseenter="onMouseEnter(4)" onmouseleave="onMouseLeave(4)"><a href="./apartments/apartment-5.html"></a></div>
+                                    <div class="interactive flat-five part-four" onmouseenter="onMouseEnter(4)" onmouseleave="onMouseLeave(4)"><a href="./apartments/apartment-5.html"></a></div>
+                                    <div class="interactive flat-five part-five" onmouseenter="onMouseEnter(4)" onmouseleave="onMouseLeave(4)"><a href="./apartments/apartment-5.html"></a></div>
+                                    <div class="interactive flat-six part-six" onmouseenter="onMouseEnter(5)" onmouseleave="onMouseLeave(5)"><a href="./apartments/apartment-6.html"></a></div>
+                                    <div class="interactive flat-six part-seven" onmouseenter="onMouseEnter(5)" onmouseleave="onMouseLeave(5)"><a href="./apartments/apartment-6.html"></a></div>
+                                    <div class="interactive flat-six part-eight" onmouseenter="onMouseEnter(5)" onmouseleave="onMouseLeave(5)"><a href="./apartments/apartment-6.html"></a></div>
                                 </div>
-                                <div class="interactive flat-seven part-one" onmouseenter="onMouseEnter(6)" onmouseleave="onMouseLeave(6)"><a href="./apartments/apartment-7.html"></a></div>
-                                <div class="interactive flat-seven part-two" onmouseenter="onMouseEnter(6)" onmouseleave="onMouseLeave(6)"><a href="./apartments/apartment-7.html"></a></div>
-                                <div class="interactive flat-seven part-three" onmouseenter="onMouseEnter(6)" onmouseleave="onMouseLeave(6)"><a href="./apartments/apartment-7.html"></a></div>
-                                <div class="interactive flat-seven part-four" onmouseenter="onMouseEnter(6)" onmouseleave="onMouseLeave(6)"><a href="./apartments/apartment-7.html"></a></div>
+                                <div class="floorplan third">
+                                    <div class="background background--flat-seven part-one"></div>
+                                    <div class="background background--flat-seven part-two"></div>
+                                    <div class="background background--flat-seven part-three"></div>
+                                    <div class="background background--flat-seven part-four"></div>
+                                    <img src="./assets/floorplans/floorplan-third.png" alt="">
+                                    <div class="text-box text-box--available text-box--7" onmouseenter="onMouseEnter(6)" onmouseleave="onMouseLeave(6)">
+                                        <a href="./apartments/apartment-7.html">
+                                            <div class="flat-number">
+                                                <div class="flat-number__border">
+                                                    <div class="flat-number__inner">
+                                                        <div class="space-holder"></div>
+                                                        <h4 class="number">7</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flat-info">
+                                                <div class="left">
+                                                </div><div class="right">
+                                                    <p>
+                                                        97,30 m<sup>2</sup><br />
+                                                        <em>Available for sale</em>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="interactive flat-seven part-one" onmouseenter="onMouseEnter(6)" onmouseleave="onMouseLeave(6)"><a href="./apartments/apartment-7.html"></a></div>
+                                    <div class="interactive flat-seven part-two" onmouseenter="onMouseEnter(6)" onmouseleave="onMouseLeave(6)"><a href="./apartments/apartment-7.html"></a></div>
+                                    <div class="interactive flat-seven part-three" onmouseenter="onMouseEnter(6)" onmouseleave="onMouseLeave(6)"><a href="./apartments/apartment-7.html"></a></div>
+                                    <div class="interactive flat-seven part-four" onmouseenter="onMouseEnter(6)" onmouseleave="onMouseLeave(6)"><a href="./apartments/apartment-7.html"></a></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div><div class="house-nagivation house-nagivation--desktop">
-                    <div class="house-nagivation--desktop__inner align-center">
-                        <div class="button-container button-container--up">
-                            <div class="button button--up active" onclick="goUp()"></div>
+                    </div><div class="house-nagivation house-nagivation--desktop">
+                        <div class="house-nagivation__inner align-center">
+                            <div class="arrow-container arrow-container--up">
+                                <div class="arrow arrow--up active" onclick="goUp()"></div>
+                            </div>
+                            <div class="list-container">
+                                <ul>
+                                    <li class="desktop-floor-navigation floor-navigation">
+                                        <h4 class="number"><a onclick="jumpToFloor(3)">
+                                            <span class="border">3</span>
+                                        </a></h4>
+                                        <h4 class="absolute">3rd Floor</h4>
+                                    </li>
+                                    <li class="desktop-floor-navigation floor-navigation">
+                                        <h4 class="number"><a onclick="jumpToFloor(2)">
+                                            <span class="border">2</span>
+                                        </a></h4>
+                                        <h4 class="absolute">2nd Floor</h4>
+                                    </li>
+                                    <li class="desktop-floor-navigation floor-navigation">
+                                        <h4 class="number"><a onclick="jumpToFloor(1)">
+                                            <span class="border">1</span>
+                                        </a></h4>
+                                        <h4 class="absolute">1st Floor</h4>
+                                    </li>
+                                    <li class="desktop-floor-navigation floor-navigation">
+                                        <h4 class="number"><a onclick="jumpToFloor(0)">
+                                            <span class="border">0</span>
+                                        </a></h4>
+                                        <h4 class="absolute">Ground Floor</h4>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="arrow-container arrow-container--down">
+                                <div class="arrow arrow--down active" onclick="goDown()"></div>
+                            </div>
                         </div>
-                        <div></div>
-                        <ul>
-                            <li class="desktop-floor-navigation">
-                                <h4><a onclick="jumpToFloor(3)">3</a></h4>
-                                <h4 class="absolute">3rd Floor</h4>
-                            </li class="desktop-floor-navigation">
-                            <li class="desktop-floor-navigation">
-                                <h4><a onclick="jumpToFloor(2)">2</a></h4>
-                                <h4 class="absolute">2nd Floor</h4>
-                            </li>
-                            <li class="desktop-floor-navigation">
-                                <h4><a onclick="jumpToFloor(1)">1</a></h4>
-                                <h4 class="absolute">1st Floor</h4>
-                            </li>
-                            <li class="desktop-floor-navigation">
-                                <h4><a onclick="jumpToFloor(0)">0</a></h4>
-                                <h4 class="absolute">Ground Floor</h4>
-                            </li>
-                        </ul>
-                        <div class="button-container button-container--down">
-                            <div class="button button--down active" onclick="goDown()"></div>
+                        <!-- 
+                        <div class="previous-container">
+                            <div class="arrow arrow--previous" onclick="previousPhoto()"></div>
                         </div>
+                        <div class="next-container">
+                            <div class="arrow arrow--next" onclick="nextPhoto()"></div>
+                        </div> -->
                     </div>
-                    <!-- 
-                    <div class="previous-container">
-                        <div class="arrow arrow--previous" onclick="previousPhoto()"></div>
-                    </div>
-                    <div class="next-container">
-                        <div class="arrow arrow--next" onclick="nextPhoto()"></div>
-                    </div> -->
                 </div>
             </main>
             <!-- <aside id="callback-form" class="callback-form--opened"> -->
