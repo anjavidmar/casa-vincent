@@ -21,7 +21,7 @@
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff" />
-        <title>Haus auf Krk</title>
+        <title>Haus auf Krk | Location</title>
         <meta name="description" content="Apartments zu verkaufen auf Insel Krk, Kroatien. Die Apartments sind verschieden groß von 38,50 m2 bis 97,30m2. Alle mit eigenem Parkplatz, Balkon und Terrasse auf einem großen Grundstück von 1650 m2. Perfekte Lage, unweit von Strand, Marine mit Slipanlage und Hauptplatz von Njivice." />
         <meta name="keywords" content="Wohnung kaufen Kroatien, Wohnung kaufen Krk, Immobilien in Kroatien kaufen, Wohnungskauf in Kroatien, Immobilien Kroatien, Wohnimmobilien Kroatien, Ferienwohnungen Krk, Ferienwohnungen Kroatien,Eigentum zum Verkauf Kroatien, Land zum Verkauf Kroatien, Häuser zum Verkauf Kroatien" />
         <!-- Facebook Pixel Code -->
@@ -49,7 +49,7 @@
         <link rel="stylesheet" type="text/css" href="./css/style.css" />
     </head>
     <body>
-        <div id="site" class="site plum">
+        <div id="site" class="site">
             <header id="header">
                 <div class="header__inner">
                     <div class="header__left">
@@ -63,9 +63,9 @@
                             </div>
                         </div>
                         <div class="site-identity">
-                            <h1><a>Haus auf Krk</a></h1>
+                            <h1><a href="./">Haus auf Krk</a></h1>
                             <em class="smaller" itemscope itemprop="address" itemtype="http://schema.org/PostalAddress">
-                                <a href="./location.html">
+                                <a>
                                     <span itemprop="streetAddress">Vladimira Nazora 2,</span>
                                     <span itemprop="postalCode" class="hidden">51512 </span>
                                     <span itemprop="addressLocality"> Njivice</span>
@@ -92,7 +92,7 @@
                     <img class="background-logo" src="./assets/images/logo-large-white.png" alt="large haus auf krk logo" />
                     <nav>
                         <ul>
-                            <li class="display current"><span class="decorative-line decorative-line--start"></span><a>Haus auf Krk</a><span class="decorative-line decorative-line--end"></span></li>
+                            <li class="display link"><span class="decorative-line decorative-line--start"></span><a href="./">Haus auf Krk</a><span class="decorative-line decorative-line--end"></span></li>
                             <li class="divider">
                                 <div class="little-square"></div>
                                 <div class="large-square"></div>
@@ -104,7 +104,7 @@
                                 <div class="large-square"></div>
                                 <div class="little-square"></div>
                             </li>
-                            <li class="display link"><span class="decorative-line decorative-line--start"></span><a href="./location.html">Location</a><span class="decorative-line decorative-line--end"></span></li>
+                            <li class="display current"><span class="decorative-line decorative-line--start"></span><a>Location</a><span class="decorative-line decorative-line--end"></span></li>
                             <li class="divider">
                                 <div class="little-square"></div>
                                 <div class="large-square"></div>
@@ -131,80 +131,40 @@
                     </footer>
                 </div>
             </aside>
-            <main id="main" class="home">
-                <div class="home__inner max-home-width">
-                    <div class="header-container align-left">
-                        <h4>Modernes Wohnhaus mit<br /> <span class="larger">7</span> Apartments in Njivice, Insel  Krk, Kroatien.</h4>
-                    </div>
-                    <div class="hero-container">
-                        <img class="hero-spaceholder max-height" src="./assets/images/square-spaceholder.png">
-                        <img id="hero" class="hero" src="./assets/images/haus-auf-krk.jpg" alt="Drone shot of the house with a view of the sea behind it.">
-                    </div>
-                    <div class="cta-container">
-                        <div class="cta-container__inner align-left">
-                            <div class="left">
-                                <p class="margined">
-                                    Die Apartments sind verschieden groß von 38,50 m<sup>2</sup> bis 97,30 m<sup>2</sup>.
+            <main id="main" class="location">
+                <div id="map-container" class="fixed-height">
+                    <div id="map"></div>
+                    <div class="address-container">
+                        <div class="address-container__inner">
+                            <div class="decorative-line"></div>
+                            <div class="address" itemscope itemprop="address" itemtype="http://schema.org/PostalAddress">
+                                <p>
+                                    <span itemprop="streetAddress">Ulica Vladimira Nazora 2,</span>
                                 </p>
-                            </div><div class="right">
-                                <div class="button-link-container">
-                                    <div class="decorative-line"></div>
-                                    <a href="./apartments.html"><span class="button-border">
-                                        <span class="button">Hier die Wohnungen</span>
-                                    </span></a>
-                                </div>
-                            </div>
-                        </div><div class="cta-container__inner align-left">
-                            <div class="left">
-                                <p class="margined">
-                                    Perfekte Lage, unweit von Strand, Marine mit Slipanlage und Hauptplatz von Njivice. 
+                                <p>
+                                    <span itemprop="postalCode">51512 </span>
+                                    <span itemprop="addressLocality">Njivice,</span>
                                 </p>
-                            </div><div class="right">
-                                <div class="button-link-container">
-                                    <div class="decorative-line"></div>
-                                    <a href="./location.html"><span class="button-border">
-                                        <span class="button">Landkarte hier</span>
-                                    </span></a>
-                                </div>
-                            </div>
-                        </div><div class="cta-container__inner align-left">
-                            <div class="left">
-                                <p class="margined">
-                                    Weitere Infos erhalten Sie vom Eigentümer.
+                                <p>
+                                    <span itemprop="addressLocality">Insel Krk,</span>
                                 </p>
-                            </div><div class="right">
-                                <div class="button-link-container">
-                                    <div class="decorative-line"></div>
-                                    <a class="link" onclick="toggleForm(contact, 2, 3)"><span class="button-border">
-                                        <span class="button">Kontakt</span>
-                                    </span></a>
-                                </div>
+                                <p>
+                                    <span itemprop="addressCountry">Kroatien</span>
+                                </p>
                             </div>
                         </div>
-                        <div class="cta-container--desktop">
-                            <div class="cta-container__inner">
-                                <div class="button-link-container">
-                                    <div class="decorative-line"></div>
-                                    <a href="./apartments.html"><span class="button-border">
-                                        <span class="button">Hier die Wohnungen</span>
-                                    </span></a>
-                                </div>
-                            </div><div class="cta-container__inner">
-                                <div class="button-link-container">
-                                    <div class="decorative-line"></div>
-                                    <a href="./location.html"><span class="button-border">
-                                        <span class="button">Landkarte hier</span>
-                                    </span></a>
-                                </div>
-                            </div><div class="cta-container__inner">
-                                <div class="button-link-container">
-                                    <div class="decorative-line"></div>
-                                    <a class="link" onclick="toggleForm(contact, 2, 3)"><span class="button-border">
-                                        <span class="button">Kontakt</span>
-                                    </span></a>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
+                </div>
+                <div class="description-container">
+                    <h3 class="align-left">Haus auf Krk</h3>
+                    <div class="align-left padded">
+                        <p class="margined">Modernes Wohnhaus mit 7 Apartments befindet sich auf einem großen Grundstück mit einer Rasenfläche von 950 m<sup>2</sup> und grenzt von zwei Seiten an eine Waldfläche, einem Mekka für Pilzsammler. Die Lage der Immobilie ist ruhig; Entfernung zum Strand (erstreckt sich über 5 km) ca. 500m. Marine mit Slipanlage und zentraler Hauptplatzes mit Geschäften 500 m Luftlinie entfernt.</p>
+                    </div>
+                    <div class="button-link-container">
+                        <div class="decorative-line"></div>
+                        <a href="./apartments.html"><span class="button-border">
+                            <span class="button">Hier die Wohnungen</span>
+                        </span></a>
                     </div>
                 </div>
             </main>
@@ -282,9 +242,9 @@
                                 </div>
                             </div>
                             <div class="site-identity">
-                                <h1><a>Haus auf Krk</a></h1>
+                                <h1><a href="./">Haus auf Krk</a></h1>
                                 <em class="smaller" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
-                                    <a href="./location.html">
+                                    <a>
                                         <span itemprop="streetAddress">Vladimira Nazora 2,</span>
                                         <span itemprop="postalCode" class="hidden">51512 </span>
                                         <span itemprop="addressLocality"> Njivice</span>
@@ -383,5 +343,6 @@
             </footer>
         </div>
         <script type="text/javascript" src="./js/script.js" defer></script>
+        <script type="text/javascript" src="./js/maps.js" defer></script>
     </body>
 </html>

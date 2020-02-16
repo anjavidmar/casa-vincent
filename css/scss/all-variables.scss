@@ -1,0 +1,63 @@
+@mixin box-sizing($property) {
+    -moz-box-sizing: $property;
+    -webkit-box-sizing: $property;
+    box-sizing: $property;
+}
+
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -moz-transform: $property;
+    -ms-transform: $property;
+    -o-transform: $property;
+    transform: $property;
+}
+
+@mixin transition($property) {
+    -webkit-transition: $property;
+    transition: $property;
+}
+
+@mixin transition-property($property) {
+    -moz-transition-property: $property;
+    -o-transition-property: $property;
+    -webkit-transition-property: $property;
+    transition-property: $property;
+}
+
+@mixin transition-duration($property) {
+    -moz-transition-duration: $property;
+    -o-transition-duration: $property;
+    -webkit-transition-duration: $property;
+    transition-duration: $property;
+}
+
+@mixin transition-delay($property) {
+    -moz-transition-delay: $property;
+    -o-transition-delay: $property;
+    -webkit-transition-delay: $property;
+    transition-delay: $property;
+}
+
+$background: #f1eddc;
+$plum: #93837f;
+$blue: #92b4a7;
+$grey:#bdc4a7;
+$plum-overlay: rgba(147, 131, 127, 0.65);
+$blue-overlay: rgba(146, 180, 167, 0.65);
+$grey-overlay:rgba(189, 196, 167, 0.85);
+$plum-text: #645450;
+$soft-white: #f6f9f0;
+$pure-white: #ffffff;
+$smokey-black: #0c080a;
+$jet-black: #000000;
+
+// Fahkwang:400,400i,500,500i,600,600i| 400, 500, 600
+// Frank+Ruhl+Libre:400,700| 400, 700
+// Open+Sans:400,700|
+// Sarabun:200,200i,400,400i|
+// Shadows+Into+Light+Two
+
+$display: "Fahkwang", Helvetica, Arial, sans-serif;
+$handwriting: "Shadows Into Light Two", Helvetica, Arial, sans-serif;
+$sans-serif: "Sarabun", Helvetica, Arial, sans-serif;
+$serif: "Frank Ruhl Libre", Garamond, Times, serif;

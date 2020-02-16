@@ -1,0 +1,134 @@
+* {
+    @include box-sizing(border-box);
+}
+
+img {
+    max-width: 100%;
+}
+
+// Typography
+
+body {
+    background-color: $background;
+    background-image: url('../assets/images/ricepaper_background.png');
+    color: $jet-black;
+    font-family: $serif;
+}
+
+h1, h2, h3, h4, h5, h6, .display {
+    font-family: $display;
+    font-weight: 500;
+}
+
+// .top-heading {
+//     font-family: $sans-serif;
+// }
+
+h1 {
+    font-size: 1.125em;
+    margin-bottom: 0.25rem;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.375em;
+    line-height: 1.25;
+}
+
+h4 {
+    font-size: 1.25em;
+}
+
+h5 {
+    font-size: 1.125em;
+}
+
+// h6 {
+//     font-size: 1em;
+// }
+
+p.margined {
+    margin-bottom: 1em;
+}
+
+strong {
+    font-weight: 700;
+}
+
+em {
+    font-style: italic;
+}
+
+u {
+    text-decoration: underline;
+}
+
+.smaller {
+    font-size: 0.875em;
+}
+
+.large {
+    font-size: 1.125em;
+}
+
+.larger {
+    font-size: 1.5em;
+}
+
+a, a:link, a:visited, a:focus, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+a.link {
+    cursor: pointer;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-left {
+    text-align: left;
+}
+
+// Layout
+
+.site {
+    position: relative;
+}
+
+.site, .header__inner, .footer__inner, .form-container__inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    min-width: 260px;
+    padding: 0 10px;
+}
+
+aside > * {
+    min-width: 260px;
+}
+
+main, .form-container, .slideshow-container {
+    padding-top: 145px;
+}
+
+main {
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.invisible {
+    visibility: hidden;
+}
