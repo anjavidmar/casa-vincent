@@ -1,0 +1,10 @@
+# Redirects from what the browser requests to what we serve
+
+/apartments.html                    /apartments
+/location.html                      /location
+/apartments/apartment-1.html        /apartments/apartment-1
+/apartments/apartment-2.html        /apartments/apartment-2
+/apartments/apartment-3.html        /apartments/apartment-3
+/apartments/apartment-5.html        /apartments/apartment-5
+/apartments/apartment-6.html        /apartments/apartment-6
+/apartments/apartment-7.html        /apartments/apartment-7
