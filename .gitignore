@@ -1,5 +1,3 @@
 .sass-cache/
-*.scss
-*.css.map
 
-normalize.css
+extras/
