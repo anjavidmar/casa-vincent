@@ -205,6 +205,22 @@ header {
         em {
             color: $plum;
         }
+
+        .apps {
+            display: inline-block;
+
+            img {
+                vertical-align: middle;
+
+                &:first-of-type {
+                    margin-right: 0.25em;
+                }
+
+                &:nth-of-type(3) {
+                    display: none;
+                }
+            }
+        }
     }
 
     &.opaque-on-scroll {
@@ -266,6 +282,20 @@ header {
         .contact {
             em {
                 color: $soft-white;
+            }
+
+            .apps {
+                display: inline-block;
+    
+                img {
+                    &:nth-of-type(2) {
+                        display: none;
+                    }
+    
+                    &:nth-of-type(3) {
+                        display: inline-block;
+                    }
+                }
             }
         }
     }

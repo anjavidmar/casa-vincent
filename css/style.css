@@ -302,6 +302,18 @@ header .contact .number {
 header .contact em {
   color: #93837f;
 }
+header .contact .apps {
+  display: inline-block;
+}
+header .contact .apps img {
+  vertical-align: middle;
+}
+header .contact .apps img:first-of-type {
+  margin-right: 0.25em;
+}
+header .contact .apps img:nth-of-type(3) {
+  display: none;
+}
 header.opaque-on-scroll {
   background-color: #f6f9f0a6;
   background-image: linear-gradient(#f1eddc, #f6f9f059);
@@ -343,6 +355,15 @@ header.ui-plum-background .lang-switch li.active span {
 }
 header.ui-plum-background .contact em {
   color: #f6f9f0;
+}
+header.ui-plum-background .contact .apps {
+  display: inline-block;
+}
+header.ui-plum-background .contact .apps img:nth-of-type(2) {
+  display: none;
+}
+header.ui-plum-background .contact .apps img:nth-of-type(3) {
+  display: inline-block;
 }
 
 aside {
