@@ -305,14 +305,18 @@ header .contact em {
 header .contact .apps {
   display: inline-block;
 }
-header .contact .apps img {
+header .contact .apps a {
+  display: inline-block;
   vertical-align: middle;
 }
-header .contact .apps img:first-of-type {
+header .contact .apps a:first-of-type {
   margin-right: 0.25em;
 }
-header .contact .apps img:nth-of-type(3) {
+header .contact .apps a:nth-of-type(3) {
   display: none;
+}
+header .contact .apps img {
+  display: block;
 }
 header.opaque-on-scroll {
   background-color: #f6f9f0a6;
