@@ -297,27 +297,35 @@
         }
 
         .part-five {
-            height: 49%;
+            // height: 49%;
+            height: 31%;
             left: 32.5%;
             top: 48.5%;
-            width: 33%;
+            width: 32.5%;
         }
 
         .part-six {
+            height: 18%;
+            left: 32.5%;
+            top: 79.5%;
+            width: 33%;
+        }
+
+        .part-seven {
             height: 32.5%;
             left: 52%;
             top: 12%;
             width: 42%;
         }
 
-        .part-seven {
+        .part-eight {
             height: 4%;
             left: 52%;
             top: 44.5%;
             width: 35.5%;
         }
 
-        .part-eight {
+        .part-nine {
             height: 34.5%;
             left: 65.25%;
             top: 48.5%;
@@ -716,6 +724,224 @@
 
     .floorplan-container {
         padding: 1.75em 0;
+    }
+
+    .floorplan-container__inner {
+        display: inline-block;
+        position: relative;
+
+        .room {
+            position: absolute;
+        }
+
+        &--one {
+            .room {
+                &-1 {
+                    height: 28%;
+                    left: 10%;
+                    top: 16%;
+                    width: 38%;
+                }
+
+                &-2 {
+                    height: 28%;
+                    left: 10%;
+                    top: 38%;
+                    width: 38%;
+                }
+
+                &-3 {
+                    height: 28%;
+                    left: 10%;
+                    top: 60%;
+                    width: 38%;
+                }
+
+                &-4 {
+                    bottom: 0;
+                    height: 54%;
+                    right: 0;
+                    width: 60%;
+                }
+
+                &-5 {
+                    height: 23%;
+                    right: 20%;
+                    top: 14%;
+                    width: 24%;
+                }
+
+                &-6 {
+                    height: 20%;
+                    right: 20%;
+                    top: 31%;
+                    width: 24%;
+                }
+            }
+        }
+
+        &--two, &--six {
+            .room {
+                &-1 {
+                    height: 23%;
+                    left: 0;
+                    top: 12%;
+                    width: 38%;
+                }
+
+                &-2 {
+                    height: 37%;
+                    right: 17%;
+                    top: 12%;
+                    width: 55%;
+                }
+
+                &-3 {
+                    height: 42%;
+                    right: 14.5%;
+                    top: 44%;
+                    width: 60%;
+                }
+
+                &-4 {
+                    height: 28%;
+                    left: 0;
+                    top: 30%;
+                    width: 38%;
+                }
+            }
+        }
+
+        &--three, &--five {
+            .room {
+                &-1 {
+                    height: 35%;
+                    right: 21%;
+                    top: 16%;
+                    width: 37%;
+                }
+
+                &-2 {
+                    height: 26%;
+                    left: 10%;
+                    top: 16%;
+                    width: 38%;
+                }
+
+                &-3 {
+                    height: 27%;
+                    left: 10%;
+                    top: 60%;
+                    width: 38%;
+                }
+
+                &-4 {
+                    bottom: 16%;
+                    height: 38%;
+                    right: 0;
+                    width: 60%;
+                }
+
+                &-5 {
+                    height: 14%;
+                    left: 10%;
+                    top: 39%;
+                    width: 28%;
+                }
+
+                &-6 {
+                    height: 14%;
+                    left: 10%;
+                    top: 50%;
+                    width: 28%;
+                }
+
+                &-7 {
+                    bottom: 38%;
+                    height: 16%;
+                    right: 0;
+                    width: 26%;
+                }
+            }
+        }
+
+        &--seven {
+            .room {
+                &-1 {
+                    height: 46%;
+                    left: 25%;
+                    top: 38%;
+                    width: 46%;
+                }
+
+                &-2 {
+                    height: 33%;
+                    left: 0;
+                    top: 17%;
+                    width: 31%;
+                }
+
+                &-3 {
+                    height: 31%;
+                    right: 0;
+                    top: 9%;
+                    width: 36%;
+                }
+
+                &-4 {
+                    height: 34%;
+                    left: 0;
+                    top: 64%;
+                    width: 31%;
+                }
+
+                &-5 {
+                    height: 31%;
+                    right: 0;
+                    top: 53%;
+                    width: 36%;
+                }
+
+                &-6 {
+                    height: 12%;
+                    left: 0;
+                    top: 47%;
+                    width: 31%;
+                }
+
+                &-7 {
+                    height: 12%;
+                    right: 0;
+                    top: 35.5%;
+                    width: 36%;
+                }
+
+                &-8 {
+                    height: 12%;
+                    left: 0;
+                    top: 56%;
+                    width: 31%;
+                }
+
+                &-9 {
+                    height: 12%;
+                    right: 0;
+                    top: 45%;
+                    width: 36%;
+                }
+            }
+        }
+
+        .label {
+            background-color: #f1eddc80;
+            font-family: $handwriting;
+            font-size: 1.125em;
+            left: 50%;
+            position: absolute;
+            text-shadow: 0 0 3px $pure-white;
+            top: 50%;
+            @include transform(translate(-50%, -50%))
+        }
     }
 
     .description h3, .description h5 {

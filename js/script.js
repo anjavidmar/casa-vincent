@@ -23,6 +23,60 @@ if (document.querySelector('html').lang) {
 
 console.log(lang);
 
+// COOKIES
+
+var cookiesAccepted = getCookie('cookies');
+var faceboookAccepted = false;
+var mapsAccepted = false;
+var youtubeAccepted = false;
+/* var cookies = document.getElementById('cookies');
+var cookies_h = cookies.offsetHeight;
+var cookiesSpaceholder = document.getElementById('cookies-spaceholder');
+var cookiesNoticeShown = true; */
+
+if (cookiesAccepted) {
+    console.log('cookies accepted');
+    var faceboookAccepted = false;
+    var mapsAccepted = false;
+    var youtubeAccepted = false;
+} else {
+    console.log('cookies not accepted');
+}
+
+
+// cookie functions:
+
+function acceptAllCookies() {
+    cookies.classList.add("accepted");
+    cookiesSpaceholder.style.height = 0;
+    setCookie("cookies", "accepted", 7)
+}
+
+function setCookie(cookieName, cookieValue, expiryDays) {
+    var date = new Date();
+    date.setTime(date.getTime() + (expiryDays*24*60*60*1000));
+    var expires = "expires="+ date.toUTCString();
+    document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";path=/";
+}
+
+function getCookie(cookieName) {
+    var name = cookieName + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+// menu/close button scripts:
+
 var header = document.getElementById('header');
 var header_h = header.offsetHeight;
 
@@ -31,7 +85,7 @@ var main = document.getElementById('main');
 // main.style.minHeight = h + "px";
 console.log(header, header_h);
 
-// menu/close button scripts:
+// other functions:
 
 function setTransition() {
     var aside = document.getElementsByTagName('aside');

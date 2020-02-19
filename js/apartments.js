@@ -1,6 +1,6 @@
 console.log("hello apartments!");
 
-var visible = 0;
+var visible = 2;
 var floorplan = document.getElementsByClassName('floorplan');
 var floorLink = document.getElementsByClassName('desktop-floor-navigation');
 var floorLinkMobile = document.getElementsByClassName('mobile-floor-navigation');

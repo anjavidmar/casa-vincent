@@ -360,14 +360,14 @@ header.ui-plum-background .lang-switch li.active span {
 header.ui-plum-background .contact em {
   color: #f6f9f0;
 }
-header.ui-plum-background .contact .apps {
-  display: inline-block;
-}
-header.ui-plum-background .contact .apps img:nth-of-type(2) {
+header.ui-plum-background .contact .apps a:nth-of-type(2) {
   display: none;
 }
-header.ui-plum-background .contact .apps img:nth-of-type(3) {
+header.ui-plum-background .contact .apps a:nth-of-type(3) {
   display: inline-block;
+}
+header.ui-plum-background .contact .apps img {
+  display: block;
 }
 
 aside {
@@ -1068,24 +1068,30 @@ aside form.contact-form textarea {
   width: 6.5%;
 }
 .apartments .first .part-five, .apartments .second .part-five {
-  height: 49%;
+  height: 31%;
   left: 32.5%;
   top: 48.5%;
-  width: 33%;
+  width: 32.5%;
 }
 .apartments .first .part-six, .apartments .second .part-six {
+  height: 18%;
+  left: 32.5%;
+  top: 79.5%;
+  width: 33%;
+}
+.apartments .first .part-seven, .apartments .second .part-seven {
   height: 32.5%;
   left: 52%;
   top: 12%;
   width: 42%;
 }
-.apartments .first .part-seven, .apartments .second .part-seven {
+.apartments .first .part-eight, .apartments .second .part-eight {
   height: 4%;
   left: 52%;
   top: 44.5%;
   width: 35.5%;
 }
-.apartments .first .part-eight, .apartments .second .part-eight {
+.apartments .first .part-nine, .apartments .second .part-nine {
   height: 34.5%;
   left: 65.25%;
   top: 48.5%;
@@ -1405,6 +1411,183 @@ aside form.contact-form textarea {
 }
 .apartment .floorplan-container {
   padding: 1.75em 0;
+}
+.apartment .floorplan-container__inner {
+  display: inline-block;
+  position: relative;
+}
+.apartment .floorplan-container__inner .room {
+  position: absolute;
+}
+.apartment .floorplan-container__inner--one .room-1 {
+  height: 28%;
+  left: 10%;
+  top: 16%;
+  width: 38%;
+}
+.apartment .floorplan-container__inner--one .room-2 {
+  height: 28%;
+  left: 10%;
+  top: 38%;
+  width: 38%;
+}
+.apartment .floorplan-container__inner--one .room-3 {
+  height: 28%;
+  left: 10%;
+  top: 60%;
+  width: 38%;
+}
+.apartment .floorplan-container__inner--one .room-4 {
+  bottom: 0;
+  height: 54%;
+  right: 0;
+  width: 60%;
+}
+.apartment .floorplan-container__inner--one .room-5 {
+  height: 23%;
+  right: 20%;
+  top: 14%;
+  width: 24%;
+}
+.apartment .floorplan-container__inner--one .room-6 {
+  height: 20%;
+  right: 20%;
+  top: 31%;
+  width: 24%;
+}
+.apartment .floorplan-container__inner--two .room-1, .apartment .floorplan-container__inner--six .room-1 {
+  height: 23%;
+  left: 0;
+  top: 12%;
+  width: 38%;
+}
+.apartment .floorplan-container__inner--two .room-2, .apartment .floorplan-container__inner--six .room-2 {
+  height: 37%;
+  right: 17%;
+  top: 12%;
+  width: 55%;
+}
+.apartment .floorplan-container__inner--two .room-3, .apartment .floorplan-container__inner--six .room-3 {
+  height: 42%;
+  right: 14.5%;
+  top: 44%;
+  width: 60%;
+}
+.apartment .floorplan-container__inner--two .room-4, .apartment .floorplan-container__inner--six .room-4 {
+  height: 28%;
+  left: 0;
+  top: 30%;
+  width: 38%;
+}
+.apartment .floorplan-container__inner--three .room-1, .apartment .floorplan-container__inner--five .room-1 {
+  height: 35%;
+  right: 21%;
+  top: 16%;
+  width: 37%;
+}
+.apartment .floorplan-container__inner--three .room-2, .apartment .floorplan-container__inner--five .room-2 {
+  height: 26%;
+  left: 10%;
+  top: 16%;
+  width: 38%;
+}
+.apartment .floorplan-container__inner--three .room-3, .apartment .floorplan-container__inner--five .room-3 {
+  height: 27%;
+  left: 10%;
+  top: 60%;
+  width: 38%;
+}
+.apartment .floorplan-container__inner--three .room-4, .apartment .floorplan-container__inner--five .room-4 {
+  bottom: 16%;
+  height: 38%;
+  right: 0;
+  width: 60%;
+}
+.apartment .floorplan-container__inner--three .room-5, .apartment .floorplan-container__inner--five .room-5 {
+  height: 14%;
+  left: 10%;
+  top: 39%;
+  width: 28%;
+}
+.apartment .floorplan-container__inner--three .room-6, .apartment .floorplan-container__inner--five .room-6 {
+  height: 14%;
+  left: 10%;
+  top: 50%;
+  width: 28%;
+}
+.apartment .floorplan-container__inner--three .room-7, .apartment .floorplan-container__inner--five .room-7 {
+  bottom: 38%;
+  height: 16%;
+  right: 0;
+  width: 26%;
+}
+.apartment .floorplan-container__inner--seven .room-1 {
+  height: 46%;
+  left: 25%;
+  top: 38%;
+  width: 46%;
+}
+.apartment .floorplan-container__inner--seven .room-2 {
+  height: 33%;
+  left: 0;
+  top: 17%;
+  width: 31%;
+}
+.apartment .floorplan-container__inner--seven .room-3 {
+  height: 31%;
+  right: 0;
+  top: 9%;
+  width: 36%;
+}
+.apartment .floorplan-container__inner--seven .room-4 {
+  height: 34%;
+  left: 0;
+  top: 64%;
+  width: 31%;
+}
+.apartment .floorplan-container__inner--seven .room-5 {
+  height: 31%;
+  right: 0;
+  top: 53%;
+  width: 36%;
+}
+.apartment .floorplan-container__inner--seven .room-6 {
+  height: 12%;
+  left: 0;
+  top: 47%;
+  width: 31%;
+}
+.apartment .floorplan-container__inner--seven .room-7 {
+  height: 12%;
+  right: 0;
+  top: 35.5%;
+  width: 36%;
+}
+.apartment .floorplan-container__inner--seven .room-8 {
+  height: 12%;
+  left: 0;
+  top: 56%;
+  width: 31%;
+}
+.apartment .floorplan-container__inner--seven .room-9 {
+  height: 12%;
+  right: 0;
+  top: 45%;
+  width: 36%;
+}
+.apartment .floorplan-container__inner .label {
+  background-color: #f1eddc80;
+  font-family: "Shadows Into Light Two", Helvetica, Arial, sans-serif;
+  font-size: 1.125em;
+  left: 50%;
+  position: absolute;
+  text-shadow: 0 0 3px #ffffff;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .apartment .description h3, .apartment .description h5 {
   margin-bottom: 1em;
