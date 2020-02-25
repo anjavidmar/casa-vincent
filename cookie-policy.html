@@ -76,17 +76,16 @@
                 margin-left: 0 !important;
             }
             @media screen and (min-width : 495px) {
-                body > #CybotCookiebotDialog > #CybotCookiebotDialogDetailBody {
-                    padding: 0 25px !important;
-                }
+                body > #CybotCookiebotDialog > #CybotCookiebotDialogDetailBody, 
                 body > #CybotCookiebotDialog > #CybotCookiebotDialogDetail > #CybotCookiebotDialogDetailBody {
-                    padding: 0 25px !important;
+                    padding-left: 25px !important;
+                    padding-right: 25px !important;
                 }
             }
         </style>
     </head>
     <body>
-        <div id="site" class="site plum">
+        <div id="site" class="site">
             <header id="header">
                 <div class="header__inner">
                     <div class="header__left">
@@ -104,7 +103,7 @@
                             <em class="smaller" itemscope itemprop="address" itemtype="http://schema.org/PostalAddress">
                                 <a href="./location.html">
                                     <span itemprop="streetAddress">Vladimira Nazora 2,</span>
-                                    <span itemprop="postalCode" class="hidden">51512 </span>
+                                    <span itemprop="postalCode" class="hidden"> 51512</span>
                                     <span itemprop="addressLocality"> Njivice</span>
                                     <span itemprop="addressLocality" class="hidden"> Insel Krk</span>
                                     <span itemprop="addressCountry" class="hidden"> Kroatien</span>
@@ -114,17 +113,16 @@
                     </div><div class="header__right">
                         <ul class="lang-switch">
                             <li class="active"><a><span>DE</span></a></li>
-                            <li class="invisible"><a href="./en/"><span title="English">EN</span></a></li>
-                            <li class="invisible"><a href="./sl/"><span title="Slovenščina">SL</span></a></li>
+                            <li><a href="./en/"><span title="English">EN</span></a></li>
+                            <li><a href="./sl/"><span title="Slovenščina">SL</span></a></li>
                         </ul>
                         <span class="contact" itemprop="telephone">
                             <h6 class="number"><a href="tel:+386 41 686 434">+386 41 686 434</a></h6>
-                            <em class="hidden"><a class="link" onclick="toggleForm(callback, 0, 1)"><u>Request a call</u></a></em>
+                            <em class="hidden"><a class="link" onclick="toggleForm(callback, 0, 1)"><u>Bitten Sie um einen Anruf</u></a></em>
                             <span class="apps">
                                 <a href="https://wa.me/38641686434" target="_blank"><img title="whatsapp" src="./assets/icons/whatsapp.png" alt="whatsapp"></a>
-                                <a href="viber://add?number=38641686434" target="_blank"><img title="viber" src="./assets/icons/viber.png" alt="viber"></a>
-                                <!-- https://viber.me/username/ -->
-                                <a href="viber://add?number=38641686434" target="_blank"><img title="viber" src="./assets/icons/viber-white.png" alt="viber"></a>
+                                <a href="viber://contact?number=38641686434" target="_blank"><img title="viber" src="./assets/icons/viber.png" alt="viber"></a>
+                                <a href="viber://contact?number=38641686434" target="_blank"><img title="viber" src="./assets/icons/viber-white.png" alt="viber"></a>
                             </span>
                         </span>
                     </div>
@@ -175,81 +173,8 @@
                 </div>
             </aside>
             <main id="main" class="home">
-                <div class="home__inner max-home-width">
-                    <div class="header-container align-left">
-                        <h4>Modernes Wohnhaus mit<br /> <span class="larger">7</span> Apartments in Njivice, Insel  Krk, Kroatien.</h4>
-                    </div>
-                    <div class="hero-container">
-                        <img class="hero-spaceholder max-height" src="./assets/images/square-spaceholder.png">
-                        <img id="hero" class="hero" src="./assets/images/haus-auf-krk.jpg" alt="Drone shot of the house with a view of the sea behind it.">
-                    </div>
-                    <div class="cta-container">
-                        <div class="cta-container__inner align-left">
-                            <div class="left">
-                                <p class="margined">
-                                    Die Apartments sind verschieden groß von 38,50 m<sup>2</sup> bis 97,30 m<sup>2</sup>.
-                                </p>
-                            </div><div class="right">
-                                <div class="button-link-container">
-                                    <div class="decorative-line"></div>
-                                    <a href="./apartments.html"><span class="button-border">
-                                        <span class="button">Hier die Wohnungen</span>
-                                    </span></a>
-                                </div>
-                            </div>
-                        </div><div class="cta-container__inner align-left">
-                            <div class="left">
-                                <p class="margined">
-                                    Perfekte Lage, unweit von Strand, Marine mit Slipanlage und Hauptplatz von Njivice. 
-                                </p>
-                            </div><div class="right">
-                                <div class="button-link-container">
-                                    <div class="decorative-line"></div>
-                                    <a href="./location.html"><span class="button-border">
-                                        <span class="button">Landkarte hier</span>
-                                    </span></a>
-                                </div>
-                            </div>
-                        </div><div class="cta-container__inner align-left">
-                            <div class="left">
-                                <p class="margined">
-                                    Weitere Infos erhalten Sie vom Eigentümer.
-                                </p>
-                            </div><div class="right">
-                                <div class="button-link-container">
-                                    <div class="decorative-line"></div>
-                                    <a class="link" onclick="toggleForm(contact, 2, 3)"><span class="button-border">
-                                        <span class="button">Kontakt</span>
-                                    </span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cta-container--desktop">
-                            <div class="cta-container__inner">
-                                <div class="button-link-container">
-                                    <div class="decorative-line"></div>
-                                    <a href="./apartments.html"><span class="button-border">
-                                        <span class="button">Hier die Wohnungen</span>
-                                    </span></a>
-                                </div>
-                            </div><div class="cta-container__inner">
-                                <div class="button-link-container">
-                                    <div class="decorative-line"></div>
-                                    <a href="./location.html"><span class="button-border">
-                                        <span class="button">Landkarte hier</span>
-                                    </span></a>
-                                </div>
-                            </div><div class="cta-container__inner">
-                                <div class="button-link-container">
-                                    <div class="decorative-line"></div>
-                                    <a class="link" onclick="toggleForm(contact, 2, 3)"><span class="button-border">
-                                        <span class="button">Kontakt</span>
-                                    </span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <h2>Hello World!</h2>
+                <script id="CookieDeclaration" src="https://consent.cookiebot.com/a63d742e-02e6-4868-b2f0-dc53245ee24c/cd.js" type="text/javascript" async></script>
             </main>
             <aside id="callback-form" class="callback-form--closed hidden">
                 <header>
@@ -275,20 +200,20 @@
                     <div class="form-container__inner">
                         <form class="callback-form" action="https://formspree.io/mwkoeejk" method="POST">
                             <h3>
-                                <span>Please Give Me A Call On:</span>
+                                <span>Bitte ruf mich an</span>
                             </h3>
                             <fieldset>
                                 <div class="input-container">
-                                    <input type="text" name="name" placeholder="Your name" />
+                                    <input type="text" name="name" placeholder="Ihr Name" />
                                 </div>
                                 <div class="input-container">
-                                    <input type="text" name="number" placeholder="Your phone number" />
+                                    <input type="text" name="number" placeholder="Ihr Nummer" />
                                 </div>
                             </fieldset>
                             <div class="submit-container">
                                 <div class="decorative-line"></div>
                                 <button type="submit">
-                                    <span class="button__inner">SUBMIT</span>
+                                    <span class="button__inner">EINREICHEN</span>
                                 </button>
                             </div>
                         </form>
@@ -329,7 +254,7 @@
                                 <em class="smaller" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
                                     <a href="./location.html">
                                         <span itemprop="streetAddress">Vladimira Nazora 2,</span>
-                                        <span itemprop="postalCode" class="hidden">51512 </span>
+                                        <span itemprop="postalCode" class="hidden"> 51512</span>
                                         <span itemprop="addressLocality"> Njivice</span>
                                         <span itemprop="addressLocality" class="hidden"> Insel Krk</span>
                                         <span itemprop="addressCountry" class="hidden"> Kroatien</span>
@@ -339,11 +264,11 @@
                         </div><div class="header__right">
                             <span class="contact" itemprop="telephone">
                                 <h6 class="number"><a href="tel:+386 41 686 434">+386 41 686 434</a></h6>
-                                <em class="invisible"><a class="link" onclick="toggleForm(callback, 0, 1)"><u>Request a call</u></a></em>
+                                <em class="hidden"><a class="link" onclick="toggleForm(callback, 0, 1)"><u>Bitten Sie um einen Anruf</u></a></em>
                                 <span class="apps">
                                     <a href="https://wa.me/38641686434" target="_blank"><img title="whatsapp" src="./assets/icons/whatsapp.png" alt="whatsapp"></a>
-                                    <a href="viber://add?number=38641686434" target="_blank"><img title="viber" src="./assets/icons/viber.png" alt="viber"></a>
-                                    <a href="viber://add?number=38641686434" target="_blank"><img title="viber" src="./assets/icons/viber-white.png" alt="viber"></a>
+                                    <a href="viber://contact?number=38641686434" target="_blank"><img title="viber" src="./assets/icons/viber.png" alt="viber"></a>
+                                    <a href="viber://contact?number=38641686434" target="_blank"><img title="viber" src="./assets/icons/viber-white.png" alt="viber"></a>
                                 </span>
                             </span>
                         </div>
@@ -419,8 +344,8 @@
                 <div class="footer__left">
                     <div class="copyright">
                         <em>2020 &copy; Haus auf Krk</em>
-                        <a class="hidden" href="https://fb.me/HausAufKrk">facebook link</a>
                     </div>
+                    <div class="social"><a href="https://fb.me/HausAufKrk" target="_blank"><span class="border"><img src="./assets/icons/facebook.png" alt="facebook"></span></a></div>
                 </div><div class="footer__right">
                     <div class="author">
                         <h6 class="author"><a>Andreja Vidmar</a></h6>
@@ -431,7 +356,6 @@
                 </div>
             </footer>
         </div>
-        <script id="CookieDeclaration" src="https://consent.cookiebot.com/a63d742e-02e6-4868-b2f0-dc53245ee24c/cd.js" type="text/javascript" async></script>
         <script type="text/javascript" src="./js/script.js" defer></script>
         <script type="text/javascript" src="./js/cookies.js" defer></script>
     </body>
