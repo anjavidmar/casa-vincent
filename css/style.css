@@ -1843,7 +1843,7 @@ footer .footer__right {
   text-align: right;
   width: 47%;
 }
-footer h6, footer p {
+footer h6, footer p, footer .social {
   margin-top: 0.125rem;
 }
 footer p {
@@ -1852,6 +1852,22 @@ footer p {
 }
 footer p.email {
   display: none;
+}
+footer .copyright, footer .social {
+  display: inline-block;
+  vertical-align: middle;
+}
+footer .social .border {
+  border: 1px solid #93837f;
+  border-radius: 5px;
+  display: none;
+}
+footer .social img {
+  border: 1px solid #93837f;
+  border-radius: 3px;
+  margin: 2px;
+  vertical-align: middle;
+  width: 28px;
 }
 
 @media screen and (min-width: 350px) {
@@ -1889,6 +1905,10 @@ footer p.email {
 
   aside#site-navigation .background-logo, aside#site-navigation nav {
     padding: 95px 10px 55px;
+  }
+
+  footer .copyright {
+    margin-right: 25px;
   }
 
   .apartments .house-nagivation--mobile .floor-navigation {

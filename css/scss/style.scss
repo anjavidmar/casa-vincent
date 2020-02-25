@@ -811,7 +811,7 @@ footer {
         width: 47%;
     }
 
-    h6, p {
+    h6, p, .social {
         margin-top: 0.125rem;
     }
 
@@ -821,6 +821,28 @@ footer {
 
         &.email {
             display: none;
+        }
+    }
+
+    .copyright, .social {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .social {
+        .border {
+            border: 1px solid $plum;
+            border-radius: 5px;
+            // display: inline-block;
+            display: none;
+        }
+
+        img {
+            border: 1px solid $plum;
+            border-radius: 3px;
+            margin: 2px;
+            vertical-align: middle;
+            width: 28px;
         }
     }
 }
