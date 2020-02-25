@@ -50,7 +50,34 @@
         <link rel="stylesheet" type="text/css" href="./css/style.css" />
         <style>
             body > #CybotCookiebotDialog {
-                background-color: darkturquoise !important;
+                min-width: 260px !important;
+                overflow: auto;
+                padding-bottom: 9px !important;
+            }
+            body > #CybotCookiebotDialog > #CybotCookiebotDialogBody, body > #CybotCookiebotDialog > #CybotCookiebotDialogDetailBody {
+                max-width: 1400px !important;
+                padding-left: 9px !important;
+                padding-right: 9px !important;
+            }
+            body > #CybotCookiebotDialog > #CybotCookiebotDialogBody > #CybotCookiebotDialogPoweredbyLink {
+                display: none !important;
+            }
+            body > #CybotCookiebotDialog > #CybotCookiebotDialogBody > #CybotCookiebotDialogBodyContent {
+                padding-left: 0 !important;
+            }
+            body > #CybotCookiebotDialog > #CybotCookiebotDialogBody > #CybotCookiebotDialogBodyButtons {
+                margin-left: 0 !important;
+                padding-left: 0 !important;
+            }
+            body > #CybotCookiebotDialog > #CybotCookiebotDialogBody > #CybotCookiebotDialogBodyButtons > #CybotCookiebotDialogBodyButtonAccept {
+                background-color: #645450 !important;
+                border: 1px solid #645450 !important;
+                margin-left: 0 !important;
+            }
+            @media screen and (min-width : 495px) {
+                body > #CybotCookiebotDialog > #CybotCookiebotDialogBody, body > #CybotCookiebotDialog > #CybotCookiebotDialogDetailBody {
+                    padding: 0 25px !important;
+                }
             }
         </style>
     </head>
@@ -400,7 +427,7 @@
                 </div>
             </footer>
         </div>
-        <!-- <script id="CookieDeclaration" src="https://consent.cookiebot.com/a63d742e-02e6-4868-b2f0-dc53245ee24c/cd.js" type="text/javascript" async></script> -->
+        <script id="CookieDeclaration" src="https://consent.cookiebot.com/a63d742e-02e6-4868-b2f0-dc53245ee24c/cd.js" type="text/javascript" async></script>
         <script type="text/javascript" src="./js/script.js" defer></script>
         <script type="text/javascript" src="./js/cookies.js" defer></script>
     </body>
