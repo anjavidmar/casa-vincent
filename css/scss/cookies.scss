@@ -1,0 +1,35 @@
+.cookie-policy {
+    font-family: $sans-serif;
+    line-height: 1.2;
+    margin: 0 auto;
+    max-width: 915px;
+
+    h2 {
+        margin: 1.5em 0 2.5em;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    a:link {
+        color: $plum-text;
+    }
+
+    a:visited {
+        color: $plum;
+    }
+
+    a:hover {
+        font-weight: 700;
+    }
+
+    a:active {
+        color: $jet-black;
+    }
+
+    .CookieDeclarationTableCell {
+        border-color: $plum !important;
+        padding-right: 1.25em !important;
+    }
+}

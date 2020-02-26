@@ -1,6 +1,49 @@
 @import 'all-variables';
 @import 'brand-guidelines';
 
+body {
+    & > #CybotCookiebotDialog {
+        min-width: 260px !important;
+        overflow: auto;
+        padding-bottom: 9px !important;
+        
+        & > #CybotCookiebotDialogBody {
+            max-width: 1400px !important;
+            padding-left: 9px !important;
+            padding-right: 9px !important;
+
+            & > #CybotCookiebotDialogPoweredbyLink {
+                display: none !important;
+            }
+
+            & > #CybotCookiebotDialogBodyContent {
+                padding-left: 0 !important;
+            }
+
+            & > #CybotCookiebotDialogBodyButtons {
+                margin-left: 0 !important;
+                padding-left: 0 !important;
+            }
+
+            & > #CybotCookiebotDialogBodyButtons > #CybotCookiebotDialogBodyButtonAccept {
+                background-color: #645450 !important;
+                border: 1px solid #645450 !important;
+                margin-left: 0 !important;
+            }
+        }
+
+        &  > #CybotCookiebotDialogDetail > #CybotCookiebotDialogDetailBody {
+            max-width: 1400px !important;
+            padding-left: 9px !important;
+            padding-right: 9px !important;
+        }
+
+        a, div, #CybotCookiebotDialogBodyContentControls, #CybotCookiebotDialogBodyContentTitle {
+            font-family: $sans-serif !important;
+        }
+    }
+}
+
 header {
     left: 0;
     padding: 10px 0;
@@ -792,6 +835,8 @@ aside {
 @import 'apartments';
 
 @import 'location';
+
+@import 'cookies';
 
 footer {
     padding: 10px 0;

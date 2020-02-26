@@ -161,6 +161,12 @@
         padding: 0 25px;
     }
 
+    body > #CybotCookiebotDialog > #CybotCookiebotDialogBody, 
+    body > #CybotCookiebotDialog > #CybotCookiebotDialogDetail > #CybotCookiebotDialogDetailBody {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+
     header {
         .menu-button, .close-button {
             margin-right: 25px;

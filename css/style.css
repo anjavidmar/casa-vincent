@@ -12,11 +12,11 @@ body {
   background-color: #f1eddc;
   background-image: url("../assets/images/ricepaper_background.png");
   color: #000000;
-  font-family: "Frank Ruhl Libre", Garamond, Times, serif;
+  font-family: "Frank Ruhl Libre", "Segoe UI", Garamond, Times, serif;
 }
 
 h1, h2, h3, h4, h5, h6, .display {
-  font-family: "Fahkwang", Helvetica, Arial, sans-serif;
+  font-family: "Fahkwang", "Segoe UI", Helvetica, Arial, sans-serif;
   font-weight: 500;
 }
 
@@ -121,6 +121,40 @@ main {
 
 .invisible {
   visibility: hidden;
+}
+
+body > #CybotCookiebotDialog {
+  min-width: 260px !important;
+  overflow: auto;
+  padding-bottom: 9px !important;
+}
+body > #CybotCookiebotDialog > #CybotCookiebotDialogBody {
+  max-width: 1400px !important;
+  padding-left: 9px !important;
+  padding-right: 9px !important;
+}
+body > #CybotCookiebotDialog > #CybotCookiebotDialogBody > #CybotCookiebotDialogPoweredbyLink {
+  display: none !important;
+}
+body > #CybotCookiebotDialog > #CybotCookiebotDialogBody > #CybotCookiebotDialogBodyContent {
+  padding-left: 0 !important;
+}
+body > #CybotCookiebotDialog > #CybotCookiebotDialogBody > #CybotCookiebotDialogBodyButtons {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+body > #CybotCookiebotDialog > #CybotCookiebotDialogBody > #CybotCookiebotDialogBodyButtons > #CybotCookiebotDialogBodyButtonAccept {
+  background-color: #645450 !important;
+  border: 1px solid #645450 !important;
+  margin-left: 0 !important;
+}
+body > #CybotCookiebotDialog > #CybotCookiebotDialogDetail > #CybotCookiebotDialogDetailBody {
+  max-width: 1400px !important;
+  padding-left: 9px !important;
+  padding-right: 9px !important;
+}
+body > #CybotCookiebotDialog a, body > #CybotCookiebotDialog div, body > #CybotCookiebotDialog #CybotCookiebotDialogBodyContentControls, body > #CybotCookiebotDialog #CybotCookiebotDialogBodyContentTitle {
+  font-family: "Sarabun", "Segoe UI", Helvetica, Arial, sans-serif !important;
 }
 
 header {
@@ -677,7 +711,7 @@ aside form input[type=email], aside form input[type=text], aside form textarea {
   background-color: #f6f9f0;
   border: 1px solid #f6f9f0;
   color: #0c080a;
-  font-family: "Frank Ruhl Libre", Garamond, Times, serif;
+  font-family: "Frank Ruhl Libre", "Segoe UI", Garamond, Times, serif;
   font-size: 0.875rem;
   padding: 0.75em;
   vertical-align: bottom;
@@ -700,7 +734,7 @@ aside form button[type=submit] {
   border: 1px solid #f6f9f0;
   color: #ffffff;
   cursor: pointer;
-  font-family: "Fahkwang", Helvetica, Arial, sans-serif;
+  font-family: "Fahkwang", "Segoe UI", Helvetica, Arial, sans-serif;
   font-size: 1.0625rem;
   padding: 4px;
   position: relative;
@@ -762,7 +796,7 @@ aside form.contact-form textarea {
   border: 1px solid #93837f;
   color: #645450;
   display: inline-block;
-  font-family: "Fahkwang", Helvetica, Arial, sans-serif;
+  font-family: "Fahkwang", "Segoe UI", Helvetica, Arial, sans-serif;
   font-weight: 600;
   padding: 0.375em 0.5em;
   position: relative;
@@ -774,7 +808,7 @@ aside form.contact-form textarea {
 }
 .home h4 {
   color: #645450;
-  font-family: "Frank Ruhl Libre", Garamond, Times, serif;
+  font-family: "Frank Ruhl Libre", "Segoe UI", Garamond, Times, serif;
   line-height: 1.25;
   margin: 0.5em 0;
   max-width: 16.9em;
@@ -1577,7 +1611,7 @@ aside form.contact-form textarea {
 }
 .apartment .floorplan-container__inner .label {
   background-color: #f1eddc80;
-  font-family: "Shadows Into Light Two", Helvetica, Arial, sans-serif;
+  font-family: "Shadows Into Light Two", "Segoe UI", Helvetica, Arial, sans-serif;
   font-size: 1.125em;
   left: 50%;
   position: absolute;
@@ -1787,7 +1821,7 @@ aside form.contact-form textarea {
 .location .address-container {
   background-color: #f6f9f0;
   border: 2px solid #f6f9f0;
-  font-family: "Sarabun", Helvetica, Arial, sans-serif;
+  font-family: "Sarabun", "Segoe UI", Helvetica, Arial, sans-serif;
   position: absolute;
   right: 10px;
   text-align: left;
@@ -1826,6 +1860,35 @@ aside form.contact-form textarea {
 }
 .location .button-link-container {
   padding: 2px;
+}
+
+.cookie-policy {
+  font-family: "Sarabun", "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+  margin: 0 auto;
+  max-width: 915px;
+}
+.cookie-policy h2 {
+  margin: 1.5em 0 2.5em;
+}
+.cookie-policy a {
+  text-decoration: underline;
+}
+.cookie-policy a:link {
+  color: #645450;
+}
+.cookie-policy a:visited {
+  color: #93837f;
+}
+.cookie-policy a:hover {
+  font-weight: 700;
+}
+.cookie-policy a:active {
+  color: #000000;
+}
+.cookie-policy .CookieDeclarationTableCell {
+  border-color: #93837f !important;
+  padding-right: 1.25em !important;
 }
 
 footer {
@@ -1978,6 +2041,12 @@ footer .social img {
 @media screen and (min-width: 495px) {
   .site, .header__inner, .footer__inner, .form-container__inner {
     padding: 0 25px;
+  }
+
+  body > #CybotCookiebotDialog > #CybotCookiebotDialogBody,
+body > #CybotCookiebotDialog > #CybotCookiebotDialogDetail > #CybotCookiebotDialogDetailBody {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
   }
 
   header .menu-button, header .close-button {
