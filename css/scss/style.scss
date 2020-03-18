@@ -638,97 +638,97 @@ aside {
             }
         }
     }
+}
 
-    form {
-        margin: 0 auto;
+form {
+    margin: 0 auto;
 
-        h3 {
-            margin-bottom: 1.5em;
+    h3 {
+        margin-bottom: 1.5em;
 
-            span {
-                display: inline-block;
-            }
+        span {
+            display: inline-block;
         }
+    }
 
-        .input-container {
+    .input-container {
+        border: 1px solid $soft-white;
+        margin: 0 auto 1em;
+        padding: 3px;
+    }
+
+    input[type=email], input[type=text], textarea {
+        background-color: $soft-white;
+        border: 1px solid $soft-white;
+        color: $smokey-black;
+        font-family: $serif;
+        font-size: 0.875rem;
+        padding: 0.75em;
+        vertical-align: bottom;
+        width: 100%;
+    }
+
+    .submit-container {
+        padding: 16px 0;
+        position: relative;
+    }
+
+    .decorative-line {
+        background-color: $soft-white;
+        bottom: 11px;
+        position: absolute;
+        right: 50%;
+        top: 11px;
+        width: 1px;
+    }
+
+    button[type=submit] {
+        background-color: transparent;
+        border: 1px solid $soft-white;
+        color: $pure-white;
+        cursor: pointer;
+        font-family: $display;
+        font-size: 1.0625rem;
+        padding: 4px;
+        position: relative;
+
+        .button__inner {
+            background-color: $plum;
             border: 1px solid $soft-white;
-            margin: 0 auto 1em;
-            padding: 3px;
+            display: inline-block;
+            padding: 4px 8px;
         }
 
-        input[type=email], input[type=text], textarea {
+        &:hover {
             background-color: $soft-white;
-            border: 1px solid $soft-white;
-            color: $smokey-black;
-            font-family: $serif;
-            font-size: 0.875rem;
-            padding: 0.75em;
-            vertical-align: bottom;
-            width: 100%;
-        }
-
-        .submit-container {
-            padding: 16px 0;
-            position: relative;
-        }
-
-        .decorative-line {
-            background-color: $soft-white;
-            bottom: 11px;
-            position: absolute;
-            right: 50%;
-            top: 11px;
-            width: 1px;
-        }
-
-        button[type=submit] {
-            background-color: transparent;
-            border: 1px solid $soft-white;
-            color: $pure-white;
-            cursor: pointer;
-            font-family: $display;
-            font-size: 1.0625rem;
-            padding: 4px;
-            position: relative;
 
             .button__inner {
-                background-color: $plum;
-                border: 1px solid $soft-white;
-                display: inline-block;
-                padding: 4px 8px;
-            }
-
-            &:hover {
                 background-color: $soft-white;
-
-                .button__inner {
-                    background-color: $soft-white;
-                    border: 1px solid $plum;
-                    color: $plum;
-                }
+                border: 1px solid $plum;
+                color: $plum;
             }
         }
+    }
 
-        &.callback-form {
-            margin: 0 auto;
-            max-width: 325px;
+    &.callback-form {
+        margin: 0 auto;
+        max-width: 325px;
 
-            input[type=text] {
-                text-align: center;
-            }
+        input[type=text] {
+            text-align: center;
+        }
+    }
+
+    &.contact-form {
+        max-width: 38.25em;
+
+        input[type=email], input[type=text], textarea {
+            font-size: 1rem;
+            padding: 0.5em 0.25em;
         }
 
-        &.contact-form {
-            max-width: 38.25em;
-
-            input[type=email], input[type=text], textarea {
-                font-size: 1rem;
-                padding: 0.5em 0.25em;
-            }
-
-            textarea {
-                height: 9em;
-            }
+        textarea {
+            height: 9em;
         }
     }
 }

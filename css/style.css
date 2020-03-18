@@ -693,21 +693,22 @@ aside#contact-form .contact-info p span:first-child {
   color: #93837f;
   width: 4.5em;
 }
-aside form {
+
+form {
   margin: 0 auto;
 }
-aside form h3 {
+form h3 {
   margin-bottom: 1.5em;
 }
-aside form h3 span {
+form h3 span {
   display: inline-block;
 }
-aside form .input-container {
+form .input-container {
   border: 1px solid #f6f9f0;
   margin: 0 auto 1em;
   padding: 3px;
 }
-aside form input[type=email], aside form input[type=text], aside form textarea {
+form input[type=email], form input[type=text], form textarea {
   background-color: #f6f9f0;
   border: 1px solid #f6f9f0;
   color: #0c080a;
@@ -717,11 +718,11 @@ aside form input[type=email], aside form input[type=text], aside form textarea {
   vertical-align: bottom;
   width: 100%;
 }
-aside form .submit-container {
+form .submit-container {
   padding: 16px 0;
   position: relative;
 }
-aside form .decorative-line {
+form .decorative-line {
   background-color: #f6f9f0;
   bottom: 11px;
   position: absolute;
@@ -729,7 +730,7 @@ aside form .decorative-line {
   top: 11px;
   width: 1px;
 }
-aside form button[type=submit] {
+form button[type=submit] {
   background-color: transparent;
   border: 1px solid #f6f9f0;
   color: #ffffff;
@@ -739,35 +740,35 @@ aside form button[type=submit] {
   padding: 4px;
   position: relative;
 }
-aside form button[type=submit] .button__inner {
+form button[type=submit] .button__inner {
   background-color: #93837f;
   border: 1px solid #f6f9f0;
   display: inline-block;
   padding: 4px 8px;
 }
-aside form button[type=submit]:hover {
+form button[type=submit]:hover {
   background-color: #f6f9f0;
 }
-aside form button[type=submit]:hover .button__inner {
+form button[type=submit]:hover .button__inner {
   background-color: #f6f9f0;
   border: 1px solid #93837f;
   color: #93837f;
 }
-aside form.callback-form {
+form.callback-form {
   margin: 0 auto;
   max-width: 325px;
 }
-aside form.callback-form input[type=text] {
+form.callback-form input[type=text] {
   text-align: center;
 }
-aside form.contact-form {
+form.contact-form {
   max-width: 38.25em;
 }
-aside form.contact-form input[type=email], aside form.contact-form input[type=text], aside form.contact-form textarea {
+form.contact-form input[type=email], form.contact-form input[type=text], form.contact-form textarea {
   font-size: 1rem;
   padding: 0.5em 0.25em;
 }
-aside form.contact-form textarea {
+form.contact-form textarea {
   height: 9em;
 }
 
