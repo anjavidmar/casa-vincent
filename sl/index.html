@@ -19,48 +19,384 @@
         <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png" />
         <link rel="manifest" href="../assets/favicon/manifest.json" />
         <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta name="msapplication-TileImage" src="../" content="../assets/favicon/ms-icon-144x144.png" />
+        <meta name="msapplication-TileImage" content="../assets/favicon/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff" />
-        <title>House in Njivice, Krk</title>
+        <title>Haus auf Krk | Apartmaji naprodaj na Krku</title>
+        <meta name="description" content="Naprodaj 7 v celoti opremljenih apartmajev, ki se nahajajo na mirni lokaciji v Njivicah, na otoku Krk, in so le streljaj oddaljeni od morja. Stanovanja so različnih velikosti s površinami od 38,50 m2 do 97,30 m2. Vsa imajo svoje parkirno mesto in balkon oz. teraso, tista v pritličju pa atrij." />
+        <!-- Cookiebot Code -->
+        <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="26361f7f-e1ce-4fa0-9a3f-665064f8117d" data-blockingmode="auto" type="text/javascript"></script>
+        <!-- Facebook Pixel Code -->
+        <script>
+            !function (f, b, e, v, n, t, s) {
+                if (f.fbq) return; n = f.fbq = function () {
+                    n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+                n.queue = []; t = b.createElement(e); t.async = !0;
+                t.src = v; s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '478120792858597');
+            fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+                src="https://www.facebook.com/tr?id=478120792858597&ev=PageView&noscript=1" /></noscript>
+        <!-- End Facebook Pixel Code -->
         <meta name="author" content="Anja Vidmar" />
-        <meta name="description" content="description" />
-        <meta name="keywords" content="keyword, keyword, keyword" />
-        <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fahkwang:400,500,600|Frank+Ruhl+Libre:400,700|Sarabun:200,200i,400,400i,700,700i|Shadows+Into+Light+Two&display=swap&subset=latin-ext" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../css/reset.css" />
-        <!-- <link rel="stylesheet" type="text/css" href="../css/style.css" /> -->
-        <style>
-            header {
-                left: 0;
-                position: fixed;
-                text-align: center;
-                right: 0;
-                top: 50%;
-                -webkit-transform: translate(0, -50%);
-                -moz-transform: translate(0, -50%);
-                -ms-transform: translate(0, -50%);
-                -o-transform: translate(0, -50%);
-                transform: translate(0, -50%);
-            }
-
-            h1 {
-                font-family: 'Architects Daughter', Helvetica, Arial, sans-serif;
-                font-size: 4em;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
     </head>
     <body>
         <div id="site" class="site">
-            <header>
-                <h1>
-                    [SL]<br /> Site coming soon...
-                </h1>
+            <header id="header">
+                <div class="header__inner">
+                    <div class="header__left">
+                        <div class="menu-button" onclick="toggleMenu()">
+                            <div class="menu-button__inner">
+                                <div class="animated-button animated-button--show">
+                                    <div class="bar"></div>
+                                    <div class="bar"></div>
+                                    <div class="bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="site-identity">
+                            <h1><a>Haus auf Krk</a></h1>
+                            <em class="smaller" itemscope itemprop="address" itemtype="http://schema.org/PostalAddress">
+                                <a href="./lokacija.html">
+                                    <span itemprop="streetAddress">Vladimira Nazora 2,</span>
+                                    <span itemprop="postalCode" class="hidden">51512 </span>
+                                    <span itemprop="addressLocality"> Njivice</span>
+                                    <span itemprop="addressLocality" class="hidden"> Otok Krk</span>
+                                    <span itemprop="addressCountry" class="hidden"> Hrvaška</span>
+                                </a>
+                            </em>
+                        </div>
+                    </div><div class="header__right">
+                        <ul class="lang-switch">
+                            <li><a href="../"><span title="Deutsch">DE</span></a></li>
+                            <li><a href="../en/"><span title="English">EN</span></a></li>
+                            <li class="active"><a><span>SL</span></a></li>
+                        </ul>
+                        <span class="contact" itemprop="telephone">
+                            <h6 class="number"><a href="tel:+386 41 686 434">+386 41 686 434</a></h6>
+                            <em class="hidden"><a class="link" onclick="toggleForm(callback, 0, 1)"><u>Zaprosite za klic</u></a></em>
+                            <span class="apps">
+                                <a href="https://wa.me/38641686434" target="_blank"><img title="whatsapp" src="../assets/icons/whatsapp.png" alt="whatsapp"></a>
+                                <a href="viber://contact?number=38641686434" target="_blank"><img title="viber" src="../assets/icons/viber.png" alt="viber"></a>
+                                <a href="viber://contact?number=38641686434" target="_blank"><img title="viber" src="../assets/icons/viber-white.png" alt="viber"></a>
+                            </span>
+                        </span>
+                    </div>
+                </div>
             </header>
-            <main></main>
-            <footer></footer>
+            <aside id="site-navigation" class="site-navigation--closed">
+                <div class="site-navigation__inner">
+                    <img class="background-logo" src="../assets/images/logo-large-white.png" alt="large haus auf krk logo" />
+                    <nav>
+                        <ul>
+                            <li class="display current"><span class="decorative-line decorative-line--start"></span><a>Haus auf Krk<br /> <span class="smaller">začetna stran</span></a><span class="decorative-line decorative-line--end"></span></li>
+                            <li class="divider">
+                                <div class="little-square"></div>
+                                <div class="large-square"></div>
+                                <div class="little-square"></div>
+                            </li>
+                            <li class="display link"><span class="decorative-line decorative-line--start"></span><a href="./apartmaji.html">Apartmaji</a><span class="decorative-line decorative-line--end"></span></li>
+                            <li class="divider">
+                                <div class="little-square"></div>
+                                <div class="large-square"></div>
+                                <div class="little-square"></div>
+                            </li>
+                            <li class="display link"><span class="decorative-line decorative-line--start"></span><a href="./lokacija.html">Lokacija</a><span class="decorative-line decorative-line--end"></span></li>
+                            <li class="divider">
+                                <div class="little-square"></div>
+                                <div class="large-square"></div>
+                                <div class="little-square"></div>
+                            </li>
+                            <li class="display link"><span class="decorative-line decorative-line--start"></span><a class="link" onclick="toggleForm(contact, 2, 3)">Kontakt</a><span class="decorative-line decorative-line--end"></span></li>
+                        </ul>
+                    </nav>
+                    <footer>
+                        <div class="footer__inner">
+                            <div class="footer__left">
+                                <div class="copyright">
+                                    <em>2020 &copy; Haus auf Krk</em>
+                                </div>
+                            </div><div class="footer__right">
+                                <div class="author">
+                                    <h6 class="author"><a>Andreja Vidmar</a></h6>
+                                    <p class="email"><strong class="smaller">
+                                        <a href="mailto:andreja.vidmar@a3doo.si" target="_blank"><u>andreja.vidmar@a3doo.si</u></a>
+                                    </strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </aside>
+            <main id="main" class="home">
+                <div class="home__inner max-home-width">
+                    <div class="header-container align-left">
+                        <h4><span class="larger">7</span> različno velikih stanovanj naprodaj v moderni, večstanovanjski hiši v Njivicah na otoku Krk.</h4>
+                    </div>
+                    <div class="hero-container">
+                        <img class="hero-spaceholder max-height" src="../assets/images/square-spaceholder.png">
+                        <img id="hero" class="hero" src="../assets/images/haus-auf-krk.jpg" alt="Drone shot of the house with a view of the sea behind it.">
+                    </div>
+                    <div class="cta-container">
+                        <div class="cta-container__inner align-left">
+                            <div class="left">
+                                <p class="margined">
+                                    Stanovanja imajo od 38m<sup>2</sup> do 97m<sup>2</sup> stanovanjske površine, oglejte si kako izgledajo in kakšen je njihov razpored v hiši:
+                                </p>
+                            </div><div class="right">
+                                <div class="button-link-container">
+                                    <div class="decorative-line"></div>
+                                    <a href="./apartmaji.html"><span class="button-border">
+                                        <span class="button">Apartmaji</span>
+                                    </span></a>
+                                </div>
+                            </div>
+                        </div><div class="cta-container__inner align-left">
+                            <div class="left">
+                                <p class="margined">
+                                    Odlična lokacija v neposredni bližini obale in centra mesta Njivice, oglejte si na zemljevidu:
+                                </p>
+                            </div><div class="right">
+                                <div class="button-link-container">
+                                    <div class="decorative-line"></div>
+                                    <a href="./lokacija.html"><span class="button-border">
+                                        <span class="button">Lokacija</span>
+                                    </span></a>
+                                </div>
+                            </div>
+                        </div><div class="cta-container__inner align-left">
+                            <div class="left">
+                                <p class="margined">
+                                    Želite več informacij? Stopite v stik neposredno z lastnikom:
+                                </p>
+                            </div><div class="right">
+                                <div class="button-link-container">
+                                    <div class="decorative-line"></div>
+                                    <a class="link" onclick="toggleForm(contact, 2, 3)"><span class="button-border">
+                                        <span class="button">Kontakt</span>
+                                    </span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cta-container--desktop">
+                            <div class="cta-container__inner">
+                                <div class="button-link-container">
+                                    <div class="decorative-line"></div>
+                                    <a href="./apartmaji.html"><span class="button-border">
+                                        <span class="button">Apartmaji</span>
+                                    </span></a>
+                                </div>
+                            </div><div class="cta-container__inner">
+                                <div class="button-link-container">
+                                    <div class="decorative-line"></div>
+                                    <a href="./lokacija.html"><span class="button-border">
+                                        <span class="button">Lokacija</span>
+                                    </span></a>
+                                </div>
+                            </div><div class="cta-container__inner">
+                                <div class="button-link-container">
+                                    <div class="decorative-line"></div>
+                                    <a class="link" onclick="toggleForm(contact, 2, 3)"><span class="button-border">
+                                        <span class="button">Kontakt</span>
+                                    </span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-container">
+                        <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/er9dbbh0ymM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </main>
+            <aside id="callback-form" class="callback-form--closed hidden">
+                <header>
+                    <div class="header__inner">
+                        <div class="header__left">
+                            <div class="close-button" onclick="toggleForm(callback, 1, 0)">
+                                <div class="close-button__inner">
+                                    <div class="non-animated-button non-animated-button--hide">
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="header__right">
+                            <span class="contact" itemprop="telephone">
+                                <h6 class="number"><a href="tel:+386 41 686 434">+386 41 686 434</a></h6>
+                            </span>
+                        </div>
+                    </div>
+                </header>
+                <div class="form-container callback-form-container">
+                    <div class="form-container__inner">
+                        <form class="callback-form" action="https://formspree.io/mwkoeejk" method="POST">
+                            <h3>
+                                <span>Prosim, pokličite me:</span>
+                            </h3>
+                            <fieldset>
+                                <div class="input-container">
+                                    <input type="text" name="name" placeholder="Your name" />
+                                </div>
+                                <div class="input-container">
+                                    <input type="text" name="number" placeholder="Your phone number" />
+                                </div>
+                            </fieldset>
+                            <div class="submit-container">
+                                <div class="decorative-line"></div>
+                                <button type="submit">
+                                    <span class="button__inner">POŠLJI</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <footer>
+                    <div class="footer__inner">
+                        <div class="footer__left">
+                            <div class="copyright">
+                                <em>2020 &copy; Haus auf Krk</em>
+                            </div>
+                        </div><div class="footer__right">
+                            <div class="author">
+                                <h6 class="author"><a>Andreja Vidmar</a></h6>
+                                <p class="email"><strong class="smaller">
+                                    <a href="mailto:andreja.vidmar@a3doo.si" target="_blank"><u>andreja.vidmar@a3doo.si</u></a>
+                                </strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </aside>
+            <aside id="contact-form" class="contact-form--closed">
+                <header class="ui-plum-background">
+                    <div class="header__inner">
+                        <div class="header__left">
+                            <div class="close-button" onclick="toggleForm(contact, 3, 2)">
+                                <div class="close-button__inner">
+                                    <div class="non-animated-button non-animated-button--hide">
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="site-identity">
+                                <h1><a>Haus auf Krk</a></h1>
+                                <em class="smaller" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+                                    <a href="./lokacija.html">
+                                        <span itemprop="streetAddress">Vladimira Nazora 2,</span>
+                                        <span itemprop="postalCode" class="hidden"> 51512</span>
+                                        <span itemprop="addressLocality"> Njivice</span>
+                                        <span itemprop="addressLocality" class="hidden"> Otok Krk</span>
+                                        <span itemprop="addressCountry" class="hidden"> Hrvaška</span>
+                                    </a>
+                                </em>
+                            </div>
+                        </div><div class="header__right">
+                            <span class="contact" itemprop="telephone">
+                                <h6 class="number"><a href="tel:+386 41 686 434">+386 41 686 434</a></h6>
+                                <em class="hidden"><a class="link" onclick="toggleForm(callback, 0, 1)"><u>Zaprosite za klic</u></a></em>
+                                <span class="apps">
+                                    <a href="https://wa.me/38641686434" target="_blank"><img title="whatsapp" src="../assets/icons/whatsapp.png" alt="whatsapp"></a>
+                                    <a href="viber://contact?number=38641686434" target="_blank"><img title="viber" src="../assets/icons/viber.png" alt="viber"></a>
+                                    <a href="viber://contact?number=38641686434" target="_blank"><img title="viber" src="../assets/icons/viber-white.png" alt="viber"></a>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </header>
+                <div class="form-container contact-form-container">
+                    <div class="form-container__inner">
+                        <form class="contact-form" action="https://formspree.io/mzbrppww" method="POST">
+                            <h3>Stopite v stik</h3>
+                            <p class="large margined">Za več informacij in izražanje zanimanja se obrnite neposredno na lastnika:</p>
+                            <div class="contact-info">
+                                <div class="contact-info__inner">
+                                    <div class="left">
+                                        <div class="img-container">
+                                            <img src="../assets/images/logo.png" alt="Haus auf Krk logo">
+                                        </div>
+                                    </div><div class="right">
+                                        <div class="contact-details-container">
+                                            <p><strong class="larger">Andreja Vidmar</strong></p>
+                                            <p class="margined">
+                                                <span>e-mail: </span>
+                                                <span><a href="mailto:andreja.vidmar@a3doo.si" target="_blank"><u>andreja.vidmar@a3doo.si</u></a></span>
+                                            </p>
+                                            <p class="margined">
+                                                <span>tel: </span>
+                                                <span><a href="tel:+386 41 686 434">+386 41 686 434</a></span>
+                                            </p>
+                                            <p>
+                                                Lahko tudi izpolnite spodnji kontaktni obrazec.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <fieldset>
+                                <div class="input-container">
+                                    <input type="text" name="ime" placeholder="Vaše ime *" required />
+                                </div>
+                                <div class="input-container">
+                                    <input type="email" name="email" placeholder="Vaš e-mail *" required />
+                                </div>
+                                <div class="input-container">
+                                    <textarea name="sporocilo" placeholder="Vaše sporočilo..."></textarea>
+                                </div>
+                            </fieldset>
+                            <div class="submit-container">
+                                <div class="decorative-line"></div>
+                                <button type="submit">
+                                    <span class="button__inner">POŠLJI</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <footer>
+                        <div class="footer__inner">
+                            <div class="footer__left">
+                                <div class="copyright">
+                                    <em>2020 &copy; Haus auf Krk</em>
+                                </div>
+                            </div><div class="footer__right">
+                                <div class="author">
+                                    <h6 class="author"><a>Andreja Vidmar</a></h6>
+                                    <p class="email"><strong class="smaller">
+                                        <a href="mailto:andreja.vidmar@a3doo.si" target="_blank"><u>andreja.vidmar@a3doo.si</u></a>
+                                    </strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </aside>
+            <footer>
+                <div class="footer__left">
+                    <div class="copyright">
+                        <em>2020 &copy; Haus auf Krk</em>
+                        <a class="hidden" href="https://fb.me/HausAufKrk">facebook link</a>
+                    </div>
+                </div><div class="footer__right">
+                    <div class="author">
+                        <h6 class="author"><a>Andreja Vidmar</a></h6>
+                        <p class="email"><strong class="smaller">
+                            <a href="mailto:andreja.vidmar@a3doo.si" target="_blank"><u>andreja.vidmar@a3doo.si</u></a>
+                        </strong></p>
+                    </div>
+                </div>
+            </footer>
         </div>
-        <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
-        <!-- <script type="text/javascript" src="../js/script.js"></script> -->
-  </body>
-
+        <script type="text/javascript" src="../js/script.js" defer></script>
+    </body>
 </html>
