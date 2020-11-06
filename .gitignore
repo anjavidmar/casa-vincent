@@ -1,6 +1,3 @@
 .sass-cache/
-*.scss
-*.css.map
 
-normalize.css
-old-apartments-page.html
+extras/
