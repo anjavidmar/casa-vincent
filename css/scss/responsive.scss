@@ -1,0 +1,422 @@
+@media screen and (min-width : 350px) {
+    aside#callback-form {
+        header {
+            .menu-button, .close-button {
+                border: 1px solid $plum;
+            }
+        }
+
+        .form-container {
+            width: 59%;
+        }
+    }
+
+    .apartments {
+        .house-nagivation {
+            &--mobile {
+                .arrow-container {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+
+    .apartment {
+        .border {
+            padding: 6px 4px;
+        }
+    }
+
+    footer {
+        .footer__left {
+            width: 47%;
+        }
+
+        .footer__right {
+            text-align: right;
+            width: 53%;
+        }
+
+        p {
+            &.email {
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 26em) {
+    main, .form-container, .slideshow-container {
+        padding-top: 105px;
+    }
+
+    aside#site-navigation {
+        .background-logo, nav {
+            padding: 95px 10px 55px;
+        }
+    }
+
+    footer {
+        .copyright {
+            margin-right: 25px;
+        }
+    }
+
+    .apartments .house-nagivation--mobile .floor-navigation {
+        margin: 0 0.75em;
+    }
+
+    .apartments {
+        .house-nagivation {
+            &--mobile {
+                .floor-navigation {
+                    margin: 0 0.75em;
+                }
+            }
+        }
+
+        .floorplans-container {
+            padding-bottom: 0;
+        }
+
+        .ground {
+            .text-box {
+                &--1 {
+                    left: 18%;
+                    top: 51%;
+                }
+
+                &--2 {
+                    left: auto;
+                    right: 16%;
+                    top: 16%;
+                }
+            }
+        }
+
+        .first, .second {
+            .text-box {
+                &--3 {
+                    left: 16%;
+                    top: 22%;
+                }
+
+                &--4 {
+                    left: auto;
+                    right: 7%;
+                    top: 46%;
+                }
+
+                &--5 {
+                    left: 16%;
+                    top: 63%;
+                }
+
+                &--6 {
+                    left: auto;
+                    bottom: 61%;
+                    right: 15.5%;
+                    top: auto;
+                }
+            }
+        }
+
+        .third {
+            .text-box--7 {
+                left: 20%;
+                top: 55.75%;
+                @include transform(translate(0, -50%));
+            }
+        }
+    }
+
+    @media screen and (max-width: 849px) {
+        .home {
+            .cta-container__inner {
+                .left, .right {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+
+                .left {
+                    padding-right: 12px;
+                    width: 71%;
+                }
+
+                .right {
+                    width: 29%;
+                }
+
+                .margined {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 495px) {
+    .site, .header__inner, .footer__inner, .form-container__inner {
+        padding: 0 25px;
+    }
+
+    body > #CybotCookiebotDialog > #CybotCookiebotDialogBody, 
+    body > #CybotCookiebotDialog > #CybotCookiebotDialogDetail > #CybotCookiebotDialogDetailBody {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+
+    header {
+        .menu-button, .close-button {
+            margin-right: 25px;
+        }
+
+        .lang-switch {
+            right: 25px;
+        }
+    }
+
+    .home {
+        .header-container {
+            left: 0.5em;
+            position: absolute;
+            top: 0.375em;
+            z-index: 1;
+        }
+
+        h4 {
+            color: $soft-white;
+            margin: 0;
+            text-shadow: 1px 1px 3px $smokey-black;
+        }
+    }
+
+    .apartments {
+        .house-nagivation {
+            &--mobile {
+                .floor-navigation {
+                    margin: 0 1em;
+                }
+            }
+
+            &--desktop {
+                @include transform(translate(0, -50%));
+            }
+        }
+    }
+
+    .apartment {
+        .cell {
+            width: 25%;
+            &--bottom-border {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 33.5em) {
+    .apartment .apartment__navigation {
+        max-width: none;
+    }
+}
+
+@media screen and (min-width : 640px) {
+    main, .form-container, .slideshow-container {
+        padding-top: 95px;
+    }
+
+    header {
+        padding: 25px 0;
+
+        .header__inner {
+            padding-top: 0;
+        }
+
+        .header__left {
+            max-width: none;
+            padding-top: 0;
+            width: 43%;
+        }
+
+        .header__right {
+            display: inline-block;
+            float: none;
+            max-width: none;
+            padding-top: 0;
+            vertical-align: top;
+            width: 57%;
+        }
+
+        .lang-switch {
+            position: static;
+            right: auto;
+            top: auto;
+        }
+
+        .contact {
+            margin-left: 25px;
+        }
+    }
+
+    aside#contact-form {
+        .contact-info {
+            .left {
+                display: inline-block;
+                width: 30%;
+            }
+
+            .right {
+                width: 70%;
+            }
+
+            .contact-details-container {
+                padding-left: 1em;
+            }
+        }
+    }
+
+    .home {
+        h4 {
+            font-size: 1.5em;
+        }
+    }
+
+    .apartments {
+        .house-nagivation {
+            &--mobile {
+                display: none;
+            }
+
+            &--desktop {
+                display: inline-block;
+                @include transform(none);
+                vertical-align: middle;
+                width: 9%;
+
+                .house-nagivation__inner {
+                    display: inline-block;
+                }
+
+                .arrow-container {
+                    display: inline-block;
+                }
+
+                .floor-navigation {
+                    position: relative;
+                    width: auto;
+                }
+
+                h4 {
+                    &.number {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .floorplans-container {
+            display: inline-block;
+            vertical-align: middle;
+            width: 91%;
+        }
+    }
+
+    .apartment {
+        .contact-info {
+            .left {
+                display: inline-block;
+                width: 20%;
+            }
+
+            .right {
+                width: 80%;
+            }
+
+            .contact-details-container {
+                padding-left: 1em;
+            }
+        }
+    }
+
+    .location {
+        .address-container {
+            right: 60px;
+            top: 10px;
+        }
+    }
+}
+
+@media screen and (min-width : 850px) {
+    .home {
+        .hero-container {
+            display: inline-block;
+        }
+
+        img {
+            &.hero-spaceholder {
+                display: none;
+            }
+
+            &.hero {
+                bottom: auto;
+                height: auto;
+                left: auto;
+                max-width: 100%;
+                position: relative;
+                top: auto;
+                @include transform(none);
+            }
+        }
+
+        .cta-container {
+            background-color: $background;
+            background-image: url('../assets/images/ricepaper_background.png');
+            padding: 0.75em 0 0;
+            @include transform(translate(0, -2em));
+        }
+
+        .cta-container__inner {
+            border-bottom: none;
+            border-top: 1px solid $plum;
+            display: inline-block;
+            padding-bottom: 0;
+            vertical-align: top;
+            width: 33%;
+
+            .left {
+                padding: 0 12px;
+            }
+
+            .right {
+                display: none;
+            }
+        }
+
+        .cta-container--desktop {
+            display: block;
+
+            .cta-container__inner {
+                border-bottom: 1px solid $plum;
+                border-top: none;
+                padding-bottom: 0.75em;
+                padding-top: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 1125px) {
+    .apartment {
+        .border {
+            padding: 9px;
+        }
+        .cell {
+            width: 20%;
+            &--parking {
+                display: inline-block;
+            }
+        }
+    }
+}
